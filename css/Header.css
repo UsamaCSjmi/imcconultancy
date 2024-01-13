@@ -1,0 +1,25 @@
+.header-wrapper{
+    box-shadow: 0px 5px 10px rgba(0,0,0, 0.2);
+}
+.nav-item{
+    margin: auto 20px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: var(--theme-secondary-color);
+}
+.nav-link{
+    color: var(--theme-primary-color);
+}
+.nav-link:hover{
+    color: var(--theme-secondary-color);
+}
+.dropdown-item.active, .dropdown-item:active{
+    background-color: #f8f9fab8;
+}
+.dropdown-menu>li{
+    padding: 0 20px;
+}
+.dropdown-menu>li>.nav-link{
+    padding-left: 10px;
+    padding-right: 10px;
+}

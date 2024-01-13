@@ -1,0 +1,127 @@
+:root{
+    --theme-primary-color:#2f2484;
+    --theme-secondary-color:#faaf02;
+    font-size: 18px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:unset;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.btn-theme-primary{
+    background-color: var(--theme-primary-color);
+    border-color: var(--theme-primary-color);
+}
+.carousel-caption{
+    right: unset;
+    bottom: unset;
+    left: 20px;
+    top: 80px;
+    width: 50%;
+}
+.big-heading{
+    position: relative;
+    /* padding-right: 20px; */
+    font-size: 2rem;
+    color: var(--theme-primary-color);
+}
+/* .big-heading::before,.big-heading::after{
+    position: absolute;
+    content: "";
+    top: 10px;
+    height: 2px;
+    width: 10%;
+    background-color: var(--theme-primary-color);
+}
+.big-heading::before{
+    left:-12%;
+}
+.big-heading::after{
+    right:-12%;
+} */
+
+
+
+/* ------- Testimonial Starts --------------- */
+#testimonial-container {
+    position: relative;
+    margin: 60px 0;
+}
+
+.testimonial-background{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 0;
+}
+
+.tb-1{
+    bottom: -50px;
+    background: var(--theme-primary-color);
+}
+
+.tb-2{
+    top: -50px;
+    background: var(--theme-secondary-color);
+}
+
+#testimonialCarousel .carousel-inner {
+    z-index: 1;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .testimonial {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .testimonial img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  .testimonial-content {
+    padding: 15px;
+  }
+
+  .testimonial-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  #testimonialCarousel .carousel-control-prev, #testimonialCarousel .carousel-control-next {
+    width: 5%;
+  }
+
+  #testimonialCarousel .carousel-control-prev-icon, #testimonialCarousel .carousel-control-next-icon {
+    background-color: #007bff;
+  }
+
+  #testimonialCarousel .carousel-control-prev-icon:hover, #testimonialCarousel .carousel-control-next-icon:hover {
+    background-color: #0056b3;
+  }
+
+/* ------- Testimonial Ends --------------- */

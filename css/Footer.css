@@ -1,0 +1,17 @@
+.footer-wrapper{
+    /* background-color: var(--theme-primary-color); */
+    /* background-color: #f4f2ff; */
+    background-color: #152538;
+}
+footer .navbar-brand{
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding:10px;
+}
+.footer-nav{
+    
+}

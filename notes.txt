@@ -1,0 +1,4 @@
+php install
+XAMPP install
+Database import
+assets/config.php edit
