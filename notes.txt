@@ -1,6 +1,8 @@
 git init
 
+-------Cloning git repo to local computer starts------
 git clone git@github.com:UsamaCSjmi/imcconultancy.git
+-------Cloning git repo to local computer ends------
 
 git branch -M main
 git add .
@@ -11,4 +13,12 @@ git remote -v
 git remote add origin git@github.com:UsamaCSjmi/imcconultancy.git
 ------end if--------------
 
+----Push Code to remote repo starts---------
 git push -u origin main
+----Push Code to remote repo ends---------
+
+-----Changing current working branch-------------
+git branch danish
+git switch danish
+git branch 
+--------After these commands the branch would changed to *danish(in green)---------
