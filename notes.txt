@@ -1,4 +1,14 @@
-php install
-XAMPP install
-Database import
-assets/config.php edit
+git init
+
+git clone git@github.com:UsamaCSjmi/imcconultancy.git
+
+git branch -M main
+git add .
+git commit -m "-----Message------"
+git remote -v
+
+------if remote url is not there then -----
+git remote add origin git@github.com:UsamaCSjmi/imcconultancy.git
+------end if--------------
+
+git push -u origin main

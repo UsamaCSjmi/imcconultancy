@@ -1,0 +1,58 @@
+
+@media screen and (max-width: 600px) {
+    .career_Guidance{
+      justify-content: start;
+      align-items: center;
+      width: 100vw;
+     height: 100vh; 
+     flex-direction: column-reverse;
+    }
+    .image-container{
+      display: none;
+      bottom: 0;
+    }
+    .right{
+      margin-left: 0;
+    }
+
+    /* visitor section  */
+
+    #visiter_section{
+        background-color: blue;
+        padding: 0 0 0 0 ;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .vleft{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background-color: aqua;
+        position: relative;
+      }
+      .vlet_img{
+        width: 90vw;
+        margin-left: 00px;
+        margin-top: 00px;
+        position: none;
+    
+     }
+      .vright{
+        height: 100%;
+        width: 100%;
+        background-color: black;
+      }
+  }
+  @media screen and (max-width: 1024px) {
+    .career_Guidance{
+     height: 80vh; 
+    }
+    .image-container{
+        /* display: none; */
+        left: 3vw;
+        bottom: 0;
+      }
+  }

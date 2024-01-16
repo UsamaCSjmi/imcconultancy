@@ -1,14 +1,28 @@
 <?php
 
-// Development Settings
-define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT'].'/medi'); //edit
-define('SITE_PATH','http://localhost/development/medi'); //edit
-define('BASE_PATH','/development/medi'); //Edit path after htdocs in xampp
+// Development Settings Usama
+// define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT'].'/medi'); //edit
+// define('SITE_PATH','http://localhost/development/medi'); //edit
+// define('BASE_PATH','/development/medi'); //Edit path after htdocs in xampp
+
+// define('DB_NAME', 'imc'); //Edit it
+// define('DB_USER', 'root');
+// define('DB_PASSWORD', '');
+// define('DB_HOST', 'localhost');
+
+
+// Development Settings Danish
+define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT'].'/imc'); //edit
+define('SITE_PATH','http://localhost/imc'); //edit
+define('BASE_PATH','/imc'); //Edit path after htdocs in xampp
 
 define('DB_NAME', 'imc'); //Edit it
 define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 define('DB_HOST', 'localhost');
+
+
+
 
 // Production Settings
 // define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT']);

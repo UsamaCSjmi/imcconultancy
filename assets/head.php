@@ -34,7 +34,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- --------Stylesheets------------- -->
-    <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/style.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/style.css?v=<?php echo time()?>" />
+    <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/Main.css?v=<?php echo time()?>" />
+    <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/Responsive.css?v=<?php echo time()?>" />
     <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/Header.css" />
     <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/Footer.css" />
   </head>

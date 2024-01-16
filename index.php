@@ -21,6 +21,6 @@ elseif($router == '/mbbs' || preg_match("/mbbs\/*/i",$router)){
 else{
     include_once('404.php');
 }
-echo "Success";
+
 // echo $router;
 ?>

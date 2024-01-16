@@ -1,0 +1,79 @@
+/* ------------------------------------ home section  ----------------------      */
+
+.career_Guidance{
+    padding: 5vw;
+    padding-left: 7vw;
+    width: 100%;
+   height:100vh; 
+   display: flex;
+   position: relative;
+   /* background-color: green; */
+  }
+  
+  .left{
+    padding: 20px;
+    color: white;
+    background-color:#07294d;
+    height: 327px;
+    width: 324px;
+  
+  }
+  .right{
+    text-align: center;
+    /* background-color: #faaf02; */
+    color: #07294d;
+    height: 130px;
+    width: 350px;
+    margin-left: 15vw;
+  }
+  .right span{
+  color: red;
+  }
+  .image-container{
+    position: absolute;
+    bottom: 0;
+    left: 12vw;
+    overflow: hidden;
+    object-fit: contain;
+  }
+  .career_image{
+    height: 100%;
+    width: 100%;
+  }
+
+
+  /*------------------- visitor section --------------------*/
+
+
+  #visiter_section{
+    background-color: red;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    padding: 3vw 8vw 0 8vw;
+  }
+  .vleft{
+    height: 100%;
+    width: 40%;
+    background-color: aqua;
+    position: relative;
+  }
+  .vright{
+    height: 100%;
+    width: 60%;
+    background-color: black;
+  }
+ .vlet_img{
+    /* display: flex; */
+    width: 40vw;
+    margin-left: 80px;
+    margin-top: 60px;
+    position: absolute;
+
+ }
+ .vimg{
+    width: 100%;
+ }
+
+ 
+  
