@@ -46,7 +46,7 @@
 
 
   #visiter_section{
-    background-color: red;
+    /* background-color: red; */
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -55,25 +55,47 @@
   .vleft{
     height: 100%;
     width: 40%;
-    background-color: aqua;
+    background-color: #07294d;
     position: relative;
+  }
+  .vlet_img{
+     /* display: flex; */
+     width: 40vw;
+     margin-left: 80px;
+     margin-top: 60px;
+     position: absolute;
+ 
+  }
+  .vimg{
+     width: 100%;
   }
   .vright{
     height: 100%;
     width: 60%;
-    background-color: black;
-  }
- .vlet_img{
-    /* display: flex; */
-    width: 40vw;
-    margin-left: 80px;
-    margin-top: 60px;
-    position: absolute;
-
- }
- .vimg{
-    width: 100%;
- }
-
- 
+    background-color: #f1f1f1;
+    display: flex;
+   justify-content: center;
+   align-items: center;
   
+  }
+  .vtext {
+    padding-left: 8rem;
+    line-height: 7rem;
+}
+
+ .vright h2{
+  font-weight: 700;
+  font-size: 48px;
+  
+ }
+
+ .vright h3{
+  font-weight: 600;
+  font-size: 30px;
+  
+ }
+ .vright p {
+  font-size: 1.2rem;
+  /* margin-top: 53px; */
+  margin-bottom: 2rem;
+}

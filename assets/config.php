@@ -12,9 +12,9 @@
 
 
 // Development Settings Danish
-define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT'].'/imc'); //edit
-define('SITE_PATH','http://localhost/imc'); //edit
-define('BASE_PATH','/imc'); //Edit path after htdocs in xampp
+define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT'].'/imcconultancy'); //edit
+define('SITE_PATH','http://localhost/imcconultancy'); //edit
+define('BASE_PATH','/imcconultancy'); //Edit path after htdocs in xampp
 
 define('DB_NAME', 'imc'); //Edit it
 define('DB_USER', 'root');
