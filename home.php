@@ -117,6 +117,154 @@ include_once("assets/header.php");
     </div>
   </div>
 
+  <div class="Country_section">
+
+    <h2>MBBS <br> Abroad </h2>
+
+    <h2>|</h2>
+    <button>Country</button>
+  </div>
+
+
+
+  <div class="country_section_area">
+    <div class="row row-cols-1 row-cols-md-4 g-4 ">
+      <div class="col ">
+        <div class="card ">
+          <img class="vimg " src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
+          <div class="card-body">
+            <h5 class="card-title ">MBBS in kyrgyzstan</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
+          <div class="card-body">
+            <h5 class="card-title ">MBBS in Kazakhstan</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
+          <div class="card-body">
+            <h5 class="card-title ">MBBS in Russia</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="vimg " src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
+          <div class="card-body">
+            <h5 class="card-title ">MBBS in Georgia</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="vimg " src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
+          <div class="card-body">
+            <h5 class="card-title ">MBBS in Belarus</h5>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
+          <div class="card-body">
+            <h5 class="card-title ">MBBS in Belarus</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
+          <div class="card-body">
+            <h5 class="card-title ">MBBS in Belarus</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
+          <div class="card-body">
+            <h5 class="card-title ">MBBS in Belarus</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
+          <div class="card-body">
+            <h5 class="card-title ">MBBS in Belarus</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
+          <div class="card-body">
+            <h5 class="card-title ">MBBS in Belarus</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
+          <div class="card-body">
+            <h5 class="card-title ">MBBS in Belarus</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
+          <div class="card-body">
+            <h5 class="card-title ">MBBS in Belarus</h5>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="review_section">
+    <div class="review_text">
+      <h2>Our Students Review</h2>
+      <hr>
+      <p> Even slightly believable. If you are going use a passage of Lorem Ipsum need desire to obtain pain of itself,
+        because it is pain de sires to obtain pain of itself occur
+      </p>
+
+    </div>
+    <div class="review_image">
+      <img src="<?php echo SITE_PATH ?>/home_img/reviewimg.jpg" alt="">
+
+    </div>
+    <div class="review_text2">Best pleasure rationally encounter consequences that are very nice a again is there anyone
+      who loves or desires to obtain pain of itself
+      <div class="review_text2_name">
+        <p class="name">Alex Smith</p>
+        <p class="designation">CEO, Xelopex Group</p>
+      </div>
+    </div>
+
+  </div>
+
 
 
   <div id="testimonial-container">

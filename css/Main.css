@@ -99,3 +99,94 @@
   /* margin-top: 53px; */
   margin-bottom: 2rem;
 }
+ 
+
+
+/* countary scion    */
+.Country_section{
+  padding: 0 0 0 8vw;
+  display: flex;
+  align-items: center;
+ height: 26vh;
+ gap: 4vw;
+
+}
+.Country_section h2{
+  color: #07294d;
+   font-weight: 700;
+   line-height: 1.8rem;
+
+}
+.Country_section button{
+  background-color: #0C8B51;
+  border: none;
+  
+  padding: 2px;
+  color: white;
+  font-weight: 500;
+  width: 136px;
+    height: 43px;
+}
+.Country_section .line{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.country_section_area{
+background-color:#fff ;
+padding-left: 8vw;
+padding-right: 8vw;
+}
+.country_section_area .vimg{
+  padding: 1vh;
+}
+
+
+
+/*   review_section */
+
+.review_section{
+  display: flex;
+gap: 3vw;
+  height: 110vh;
+  width: 100vw;
+  background-color: red;
+  
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+.review_text{
+  margin-top: 24vh;
+  padding: 2vh;
+  height: 50%;
+  background-color: green;
+  width: 43%;
+}
+.review_text h2{
+  font-size: 3vw;
+  font-weight: 700;
+}
+.review_text p{
+  font-weight: 500;
+  font-size: 1.5vw;
+}
+.review_text2{
+width: 40%;
+height: 40%;
+margin-top: 10vh;
+background-color: blue;
+padding: 2vh;
+}
+.review_text2_name{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10vh;
+}
+
+.review_image{
+  height: 100%;
+}
+.review_image img{
+  height: 100%;
+}
+

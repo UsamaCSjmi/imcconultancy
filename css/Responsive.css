@@ -60,6 +60,72 @@
       /* margin-top: 53px; */
       margin-bottom: 2rem;
     }
+
+    /*      country section   */
+    .Country_section button{
+      background-color: #0C8B51;
+      border: none;
+      
+      padding: 2px;
+      color: white;
+      font-weight: 400;
+      width: 120px;
+        height: 35px;
+    }
+    .Country_section .line{
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+
+
+
+/*   review_section */
+
+.review_section{
+  display: flex;
+  flex-direction: column;
+ gap: 0;
+  height: 120vh;
+  width: 100vw;
+  background-color: red;
+  padding: 0;
+  
+}
+.review_text{
+  margin-top: 0vh;
+  padding: 1vh;
+  height: 60%;
+  
+  background-color: rgb(92, 177, 92);
+  width: 100%;
+  }
+  .review_text h2{
+    font-size: 6vw;
+    font-weight: 600;
+  }
+  .review_text p{
+    font-weight: 500;
+    font-size: 5.5vw;
+  }
+  .review_image img{
+    height: 100%;
+    width: 100%;
+  }
+  .review_text2{
+    width: 100%;
+    height: 40%;
+    margin-top: 0;
+    background-color: blue;
+    padding: 1;
+    }
+    .review_text2_name{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 5vh;
+    }
+  
+
   
   }
   @media (min-width: 600px) and (max-width: 1024px) {
