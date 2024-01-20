@@ -50,8 +50,62 @@ body{
 .big-heading::after{
     right:-12%;
 } */
-
-
+.banner{
+  position: relative;
+}
+.banner-text{
+  position: absolute;
+  z-index: 1;
+  color: #FFFFFF;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  flex-direction: column;
+}
+.breadcrumb-item{
+  color: #FFFFFF;
+}
+.breadcrumb-item.active{
+  color: #ffffffdf!important;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+  color: #ffffff;
+}
+ 
+ 
+.country-info-container{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.151);
+  border-radius: 5px;
+}
+.country-info-container .country-name{
+  color: var(--theme-primary-color);
+  font-size: 30px;
+}
+.country-text{
+  padding-top: 20px;
+  padding: 10px;
+  border-top: 3px solid #0c8b51;
+  font-size: 18px;
+}
+.box-shadow{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.151);
+  border-radius: 5px;
+}
+.form-header{
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.country-related-container{
+  position: relative;
+}
+.country-related{
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
 
 
 
@@ -73,12 +127,16 @@ body{
 
 .tb-1{
     bottom: -50px;
-    background: var(--theme-primary-color);
+    background-color: #f1f1f1;
+    /* border-bottom: 3px solid #0c8b51; */
+    /* background: var(--theme-primary-color); */
 }
 
 .tb-2{
     top: -50px;
-    background: var(--theme-secondary-color);
+    background-color: #f1f1f1;
+    border-top: 3px solid #0c8b51;
+    /* background: var(--theme-secondary-color); */
 }
 
 #testimonialCarousel .carousel-inner {
@@ -121,11 +179,15 @@ body{
   }
 
   #testimonialCarousel .carousel-control-prev-icon, #testimonialCarousel .carousel-control-next-icon {
-    background-color: #007bff;
+    /* background-color: #007bff; */
+    border-radius: 50%;
+    background-color: #000000;
   }
-
+  
   #testimonialCarousel .carousel-control-prev-icon:hover, #testimonialCarousel .carousel-control-next-icon:hover {
-    background-color: #0056b3;
+    background-color: #000000;
+    border-radius: 50%;
+    /* background-color: #0056b3; */
   }
 
 /* ------- Testimonial Ends --------------- */

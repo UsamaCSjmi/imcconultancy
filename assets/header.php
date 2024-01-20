@@ -1,8 +1,11 @@
 <?php
 require_once('./assets/head.php');
 require_once('./assets/classes/Country.php');
+require_once('./assets/classes/University.php');
 $countryObj = new Country();
 $countries = $countryObj->getAllCountry();
+$universityObj = new University();
+$universities = $universityObj->getAllUniversities();
 
 ?>
 

@@ -31,9 +31,9 @@ include_once("assets/header.php");
 
   <div class="career_Guidance">
     <div class="left">
-      <h3>--hello web</h3>
-      <h3>--hello web</h3>
-      <h3>--hello web</h3>
+      <h3>20+ Universites</h3>
+      <h3>Expert Counsellers</h3>
+      <h3>500+ Students</h3>
     </div>
     <div class="right">
       <h1> Get <span> Top level <br>Career</span> Guidence</h1>
@@ -55,23 +55,25 @@ include_once("assets/header.php");
     </h2>
     <div class="mySwiper row w-100 mb-2">
       <?php
-      $countries = $countryObj->getAllCountry();
-      while ($country = mysqli_fetch_assoc($countries)) { ?>
+      while ($university = mysqli_fetch_assoc($universities)) {
+        $universityUrl = explode(",",$university['uname'])[0];
+        $universityUrl = str_replace(" ","-",$universityUrl);
+        ?>
         <div class="col-lg-3 col-md-6 col-sm-12 ">
           <div class="card m-2">
-            <img src="<?php echo SITE_PATH . "/assets/images/countries/" . $country['image'] ?>" class="card-img-top"
-              alt="<?php echo $country['name'] ?>" style="height:10rem">
+            <img src="<?php echo SITE_PATH . "/assets/images/countries/" . $university['cimage'] ?>" class="card-img-top"
+              alt="<?php echo $university['cname'] ?>" style="height:10rem">
             <div class="card-body">
-              <h5 class="card-title">
-                <?php echo $country['name'] ?>
+              <h5 class="card-title" style="text-transform: lowercase;">
+                <?php echo $university['uname'] ?>
               </h5>
               <p class="card-text">
                 MBBS in
-                <?php echo $country['name'] ?>
+                <?php echo $university['cname'] ?>
                 <br>
                 <span class="text-danger">Fees : 2.5 Lacs/year</span>
               </p>
-              <a href="<?php echo SITE_PATH ?>/mbbs-in-<?php echo strtolower($country['name']) ?>"
+              <a href="<?php echo SITE_PATH ?>/university-<?php echo strtolower($universityUrl) ?>"
                 class="btn btn-dark">View</a>
             </div>
           </div>
@@ -127,117 +129,24 @@ include_once("assets/header.php");
 
 
 
-  <div class="country_section_area">
+  <div class="country_section_area mb-4">
     <div class="row row-cols-1 row-cols-md-4 g-4 ">
+      <?php
+      $countries = $countryObj -> getAllCountry();
+      while($country = mysqli_fetch_assoc($countries)){
+      ?>
       <div class="col ">
-        <div class="card ">
-          <img class="vimg " src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
+        <a href="<?php echo SITE_PATH."/mbbs-in-".strtolower($country['name']) ?>" class="card ">
+          <img class="vimg " src="<?php echo SITE_PATH ?>/assets/images/countries/<?php echo $country['image'];?>" alt="<?php echo "MBBS in ".$country['name'];?>">
           <div class="card-body">
-            <h5 class="card-title ">MBBS in kyrgyzstan</h5>
+            <h5 class="card-title ">MBBS in <?php echo $country['name'];?></h5>
 
           </div>
-        </div>
+      </a>
       </div>
-      <div class="col">
-        <div class="card">
-          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
-          <div class="card-body">
-            <h5 class="card-title ">MBBS in Kazakhstan</h5>
-
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
-          <div class="card-body">
-            <h5 class="card-title ">MBBS in Russia</h5>
-
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img class="vimg " src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
-          <div class="card-body">
-            <h5 class="card-title ">MBBS in Georgia</h5>
-
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img class="vimg " src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
-          <div class="card-body">
-            <h5 class="card-title ">MBBS in Belarus</h5>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card">
-          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
-          <div class="card-body">
-            <h5 class="card-title ">MBBS in Belarus</h5>
-
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
-          <div class="card-body">
-            <h5 class="card-title ">MBBS in Belarus</h5>
-
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
-          <div class="card-body">
-            <h5 class="card-title ">MBBS in Belarus</h5>
-
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
-          <div class="card-body">
-            <h5 class="card-title ">MBBS in Belarus</h5>
-
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
-          <div class="card-body">
-            <h5 class="card-title ">MBBS in Belarus</h5>
-
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
-          <div class="card-body">
-            <h5 class="card-title ">MBBS in Belarus</h5>
-
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/kyrgyzstan.jpg" alt="Loading">
-          <div class="card-body">
-            <h5 class="card-title ">MBBS in Belarus</h5>
-
-          </div>
-        </div>
-      </div>
+      <?php
+      }
+      ?>
     </div>
   </div>
 

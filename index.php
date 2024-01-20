@@ -18,6 +18,14 @@ elseif($router == '/mbbs' || preg_match("/mbbs\/*/i",$router)){
     // }
     include_once('country.php');
 }
+elseif($router == '/university' || preg_match("/university\/*/i",$router)){
+    $arr = explode('/',$router);
+    // if(isset($arr[2])){
+    //     $table = $arr[2];
+    //     $filter = $arr[3];
+    // }
+    include_once('university.php');
+}
 else{
     include_once('404.php');
 }

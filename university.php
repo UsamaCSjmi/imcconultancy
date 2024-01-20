@@ -1,29 +1,33 @@
 <?php
 include_once("assets/header.php");
-$country = explode("-",$arr[1]);//Comment
-$country = $country[sizeof($country)-1];
-// echo $country;
-$countryDetails = $countryObj -> getCountryByCountryName($country);
+
+$words = explode("-",$arr[1]);
+unset($words[0]);
+$university="";
+foreach($words as $word){
+    $university= $university." ".$word;
+}
+$university=trim($university);
+$university = $universityObj -> getUniversityByName($university);
 ?>
+
 <div class="banner w-100">
     <img class="d-block w-100" src="<?php echo SITE_PATH ?>/assets/images/banners/background-country.jpg" alt="First slide">
     <div class="d-flex w-100 banner-text">
-        <h1>MBBS in <?php echo $countryDetails['name']?></h1>
+        <h1>MBBS in <?php echo $university['name']?></h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?php echo SITE_PATH ?>">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">MBBS in <?php echo $countryDetails['name']?></li>
+                <li class="breadcrumb-item"><a href="<?php echo SITE_PATH ?>/mbbs-in-<?php echo strtolower($university['cname'])?>">MBBS in <?php echo $university['cname']?></a></li>
+                <li class="breadcrumb-item active" aria-current="page"><?php echo $university['name']?></li>
             </ol>
         </nav>
     </div>
 </div>
 <div class="container">
-    <!-- <div class="row mb-4 mt-4">
-        <img src="<?php echo SITE_PATH?>/assets/images/country_courses/<?php echo strtolower($country)?>.jpg" class="rounded mx-auto d-block" alt="MBBS in <?php echo $country?>">
-    </div> -->
     <div class="row mb-4 mt-4 country-details-container">
         <div class="col-lg-8 col-md-9 col-sm-12 country-info-container p-4">
-            <h2 class="country-name">MBBS in <?php echo $countryDetails['name']?></h2>
+            <h2 class="country-name"><?php echo $university['name']?></h2>
             <div class="country-text w-100">
                 <p><strong>About Sri Lanka</strong></p>
                 <p>Sri Lanka is a picturesque island country in the Indian Ocean southwest of the Sea of Bengal. The capital is Colombo and their official languages are Tamil and Sinhala. Sri Lanka has a mild and tropical climate with consistent temperatures throughout the year, usually ranging from 28 to 31 celsius. The majority of Sri Lankan people (70%) practice Buddhism. Cost of living in Sri Lanka is low which makes it a great option for Indian medical students.</p>
@@ -74,18 +78,16 @@ $countryDetails = $countryObj -> getCountryByCountryName($country);
                 </div>
                 <div class="col-12 box-shadow p-4">
                     <div class="text-center">
-                        <h5 class="mb-3">Universities of <?php echo $countryDetails['name'];?></h5>
+                        <h5 class="mb-3">MBBS Abroad</h5>
                     </div>
                     <ul class="list-group list-group-flush">
                         <?php
-                        $universities = $universityObj -> getUniversityByCountryId($countryDetails['id']);
-                        while($university = mysqli_fetch_assoc($universities)){
-                            $universityUrl = explode(",",$university['name'])[0];
-                            $universityUrl = str_replace(" ","-",$universityUrl);
+                        $countries = $countryObj -> getAllCountry();
+                        while($country = mysqli_fetch_assoc($countries)){
                             ?>
                             <li class="list-group-item">
-                                <a href="<?php echo SITE_PATH."/university-".strtolower($universityUrl)?>" class="nav-link">
-                                    <?php echo $university['name']?>
+                                <a href="<?php echo SITE_PATH."/mbbs-in-".strtolower($country['name'])?>" class="nav-link">
+                                    MBBS in <?php echo $country['name']?>
                                 </a>
                             </li>
                             <?php
@@ -97,7 +99,6 @@ $countryDetails = $countryObj -> getCountryByCountryName($country);
         </div>
     </div>
 </div>
-
 <?php
 include_once("assets/footer.php");
 ?>

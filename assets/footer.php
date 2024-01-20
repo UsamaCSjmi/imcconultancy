@@ -32,10 +32,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <p class="h3 text-light mb-3">Contact Info</p>
                         <p class="text-light">
-                            77/39 ground floor, behind Tagore public school, Mansarovar Sector 7, Shipra Path, Barh Devariya, Mansarovar, Jaipur, Rajasthan 302020
+                            306, 3rd floor, Living Style Mall, Jasola Vihar, New Delhi-110025
                         </p>
-                        <p class="text-light">Phoe : <a href="tel:XXXXXXXXXX">+91-XXXXXXXXXX</a></p>
-                        <p class="text-light">Email : <a href="mailto:info@imcconsultancy.co.in">imcconsultancy.co.in</a></p>
+                        <p class="text-light">Phoe : <a href="tel:+917488919466">+91-7488919466</a></p>
+                        <p class="text-light">Email : <a href="mailto:imcconsultancy01@gmail.com">imcconsultancy01@gmail.com</a></p>
                     </div>
                 </div>
             </footer>
