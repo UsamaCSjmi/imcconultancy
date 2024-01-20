@@ -54,12 +54,97 @@ include_once("assets/header.php");
       </span>
     </h2>
     <div class="mySwiper row w-100 mb-2">
-      <?php
+      <div id="carouselExampleFade2" class="carousel slide"  data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+        <?php
+      $count = 0;
       while ($university = mysqli_fetch_assoc($universities)) {
+        $count ++ ;
         $universityUrl = explode(",",$university['uname'])[0];
         $universityUrl = str_replace(" ","-",$universityUrl);
-        ?>
-        <div class="col-lg-3 col-md-6 col-sm-12 ">
+        // echo $count;
+        if($count==1){
+          ?>
+          <div class="carousel-item active">
+            <div class="w-100 row">
+              <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card m-2">
+                  <img src="<?php echo SITE_PATH . "/assets/images/countries/" . $university['cimage'] ?>" class="card-img-top"
+                    alt="<?php echo $university['cname'] ?>" style="height:10rem">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <?php echo $university['uname'] ?>
+                    </h5>
+                    <p class="card-text">
+                      MBBS in
+                      <?php echo $university['cname'] ?>
+                      <br>
+                      <span class="text-danger">Fees : 2.5 Lacs/year</span>
+                    </p>
+                    <a href="<?php echo SITE_PATH ?>/university-<?php echo strtolower($universityUrl) ?>"
+                      class="btn btn-dark">View</a>
+                  </div>
+                </div>
+              </div>
+          <?php
+        }
+        elseif($count !=1 && (($count-1)%3 == 0)){
+          //open carousel
+          ?>
+          <div class="carousel-item">
+            <div class="w-100 row">
+              <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card m-2">
+                  <img src="<?php echo SITE_PATH . "/assets/images/countries/" . $university['cimage'] ?>" class="card-img-top"
+                    alt="<?php echo $university['cname'] ?>" style="height:10rem">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <?php echo $university['uname'] ?>
+                    </h5>
+                    <p class="card-text">
+                      MBBS in
+                      <?php echo $university['cname'] ?>
+                      <br>
+                      <span class="text-danger">Fees : 2.5 Lacs/year</span>
+                    </p>
+                    <a href="<?php echo SITE_PATH ?>/university-<?php echo strtolower($universityUrl) ?>"
+                      class="btn btn-dark">View</a>
+                  </div>
+                </div>
+              </div>
+          <?php
+        }
+        elseif($count%3 == 0){
+          // close carousel
+          ?>
+              <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card m-2">
+                  <img src="<?php echo SITE_PATH . "/assets/images/countries/" . $university['cimage'] ?>" class="card-img-top"
+                    alt="<?php echo $university['cname'] ?>" style="height:10rem">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <?php echo $university['uname'] ?>
+                    </h5>
+                    <p class="card-text">
+                      MBBS in
+                      <?php echo $university['cname'] ?>
+                      <br>
+                      <span class="text-danger">Fees : 2.5 Lacs/year</span>
+                    </p>
+                    <a href="<?php echo SITE_PATH ?>/university-<?php echo strtolower($universityUrl) ?>"
+                      class="btn btn-dark">View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <?php
+        }
+        else{
+          //normal
+          ?>
+        <div class="col-lg-4 col-md-6 col-sm-12 ">
           <div class="card m-2">
             <img src="<?php echo SITE_PATH . "/assets/images/countries/" . $university['cimage'] ?>" class="card-img-top"
               alt="<?php echo $university['cname'] ?>" style="height:10rem">
@@ -78,7 +163,28 @@ include_once("assets/header.php");
             </div>
           </div>
         </div>
-      <?php } ?>
+        <?php
+        }
+        ?>
+      <?php 
+        }
+        if($count%3 != 0){
+          ?>
+              </div>
+            </div>
+          <?php
+        }
+        ?>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
     </div>
   </div>
