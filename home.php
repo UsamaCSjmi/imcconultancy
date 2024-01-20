@@ -64,7 +64,7 @@ include_once("assets/header.php");
             <img src="<?php echo SITE_PATH . "/assets/images/countries/" . $university['cimage'] ?>" class="card-img-top"
               alt="<?php echo $university['cname'] ?>" style="height:10rem">
             <div class="card-body">
-              <h5 class="card-title" style="text-transform: lowercase;">
+              <h5 class="card-title">
                 <?php echo $university['uname'] ?>
               </h5>
               <p class="card-text">
