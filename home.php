@@ -299,7 +299,7 @@ include_once("assets/header.php");
     </div>
   </div>
 
-  <div class="blog_area">
+  <div class="container">
     <div class="blog_tittle">
       <h1>Latest Blog Post</h1>
       <span class="blog_line">

@@ -223,14 +223,14 @@ font-weight: 700;
 .blog_area{
   margin-left: 8vw;
   margin-right: 8vw;
-  height: 120vh;
+  /* height: 120vh; */
   width: 83vw;
   /* background-color: aqua; */
 }
 .blog_tittle{
   display: flex;
   flex-direction: column;
-  height: 48vh;
+  /* height: 48vh; */
   align-items: center;
   justify-content: center;
   padding: 4vh;
@@ -239,7 +239,7 @@ font-weight: 700;
 .blog_tittle h1{
   color: #07294d;
   font-weight: 700;
-    font-size: 4.7vw;
+  /* font-size: 2emx; px, em, rem */
 }
 .blog_tittle p{
   align-items: center;
