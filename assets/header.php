@@ -46,7 +46,7 @@ $universities = $universityObj->getAllUniversities();
                                 $universityUrl = str_replace(" ", "-", $universityUrl);
                                 ?>
                                 <li>
-                                    <a href="<?php echo SITE_PATH?>/university-<?php echo strtolower($universityUrl) ?>" class="dropdown-item"><?php echo $singleUniversity['name']?></a>
+                                    <a href="<?php echo SITE_PATH?>/university-<?php echo strtolower($universityUrl) ?>" class="dropdown-item nav-link <?php if($current_page=="university-".strtolower($universityUrl)){echo "active";}?>"><?php echo $singleUniversity['name']?></a>
                                 </li>
                                 <?php
                             }
