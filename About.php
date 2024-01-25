@@ -18,14 +18,16 @@ include_once("assets/header.php");
             <button>Apply Now</button>
         </div>
         <div class="section_right">
-            <div class="sectionimg"><img src="About_image/About_MBBS Abroad_files/190.jpg" class="card-img-top"
-                    alt="..."></div>
-            <div class="sectionimg"> <img src="About_image/About_MBBS Abroad_files/190.jpg" class="card-img-top"
-                    alt="..."></div>
-            <div class="sectionimg"> <img src="About_image/About_MBBS Abroad_files/190.jpg" class="card-img-top"
-                    alt="..."></div>
-            <div class="sectionimg"> <img src="About_image/About_MBBS Abroad_files/190.jpg" class="card-img-top"
-                    alt="..."></div>
+            <div class="sectionimg1"><img src="About_image/About_MBBS Abroad_files/190.jpg" class="card-img-top"
+                    alt="...">
+                <img src="About_image/About_MBBS Abroad_files/190.jpg" class="card-img-top" alt="...">
+            </div>
+            <!-- <div class="sectionimg"> </div> -->
+            <div class="sectionimg2"> <img src="About_image/About_MBBS Abroad_files/190.jpg" class="card-img-top"
+                    alt="...">
+                <img src="About_image/About_MBBS Abroad_files/190.jpg" class="card-img-top" alt="...">
+            </div>
+            <!-- <div class="sectionimg"> </div> -->
         </div>
     </div>
 
