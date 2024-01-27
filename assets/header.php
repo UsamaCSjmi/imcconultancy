@@ -37,6 +37,21 @@ $universities = $universityObj->getAllUniversities();
                     <?php while($country = mysqli_fetch_assoc($countries)){?>
                     <li>
                         <a href="<?php echo SITE_PATH;?>/mbbs-in-<?php echo urlencode(strtolower($country['name']))?>" class="nav-link dropdown-item <?php if($current_page=="mbbs-in-".urlencode(strtolower($country['name']))){echo "active";}?>">MBBS in <?php echo $country['name']?></a>
+                        <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left">
+                            <?php
+                            $id = $country['id'];
+                            $universitiesInCountry = $universityObj->getUniversityByCountryId($id);
+                            while($singleUniversity = mysqli_fetch_array($universitiesInCountry)){
+                                $universityUrl = explode(",", $singleUniversity['name'])[0];
+                                $universityUrl = str_replace(" ", "-", $universityUrl);
+                                ?>
+                                <li>
+                                    <a href="<?php echo SITE_PATH?>/university-<?php echo strtolower($universityUrl) ?>" class="dropdown-item nav-link <?php if($current_page=="university-".strtolower($universityUrl)){echo "active";}?>"><?php echo $singleUniversity['name']?></a>
+                                </li>
+                                <?php
+                            }
+                            ?>
+                        </ul>
                     </li>
                     <?php } ?>
                 </ul>
