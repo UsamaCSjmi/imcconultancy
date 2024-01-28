@@ -57,6 +57,76 @@
          object-fit: cover;
           }
 
+          /* service section  */
+          .service_container{
+            flex-direction: column;
+            padding-left: 0px;
+            padding-right:0px;
+            height: 100vh;
+          }
+          .list-container{
+            width: 100%;
+            /* height: 70%; */
+            padding-left: 40px;
+            padding-right: 40px;
+            justify-content: space-between;
+            /* background-color: blueviolet; */
+          }
+          
+          .list-items>p{
+            font-size: 20px;
+          }
+          /* visitor section  */
+
+  #visiter_section {
+    padding: 0 0 0 0;
+    flex-direction: column;
+    height: 100vh;
+    position: none;
+  }
+
+  .vleft {
+    height: 40%;
+    width: 100%;
+    background-color: #07294d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vlet_img {
+    width: 90vw;
+    margin-left: 00px;
+    margin-top: 00px;
+   position: none;
+   top: 40px;
+   right:-60px;
+    /* border: 3px solid red; */
+  }
+  .vright {
+    height: 60%;
+    width: 100%;
+    padding: 0px;
+  }
+  .vtext {
+    padding-left: 0rem;
+    line-height: 2rem;
+  }
+
+  .vright h2 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .vright h3 {
+    font-weight: 600;
+    font-size: 25px;
+  }
+  .vright p {
+    font-size: 1rem;
+    /* margin-top: 53px; */
+    margin-bottom: 2rem;
+  }
+
 
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -113,5 +183,41 @@
         padding: 6px;
         /* justify-content: space-around; */
     }
+    /* -------------viitor secton  ----------- */
+  #visiter_section {
+    /* background-color: blue; */
+    padding: 0 0 0 0;
+    display: flex;
+    height: 50vh;
+  }
+
+  .vlet_img {
+    position: none;
+  }
+  .vright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 25px;
+  }
+  .vtext {
+    margin-left: 4.5vw;
+    padding: 0;
+  }
+  .vright h2 {
+    font-weight: 700;
+    font-size: 38px;
+  }
+
+  .vright h3 {
+    font-weight: 600;
+    font-size: 23px;
+  }
+  .vright p {
+    font-size: 1rem;
+    /* margin-top: 53px; */
+    margin-bottom: 2rem;
+  }
 
 }
