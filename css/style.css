@@ -191,3 +191,9 @@ body{
   }
 
 /* ------- Testimonial Ends --------------- */
+
+/* ---------------------Gallery Starts------------------- */
+.gallery-image-wrapper{
+  padding: 10px 0;
+}
+/* ---------------------Gallery Ends------------------- */

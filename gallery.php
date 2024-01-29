@@ -16,11 +16,67 @@ include_once("assets/header.php");
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <img src="<?php echo SITE_PATH ?>/assets/images/countries/bangladesh.jpg" class="img-fluid rounded" alt="...">
+        <div class="col-lg-4 col-md-2 col-sm-12">
+            <a href="<?php echo SITE_PATH ?>/assets/images/countries/bangladesh.jpg" class="gallery-image">
+                <div class="gallery-image-wrapper">
+                    <img src="<?php echo SITE_PATH ?>/assets/images/countries/bangladesh.jpg" class="img-fluid" alt="...">
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-2 col-sm-12">
+            <a href="<?php echo SITE_PATH ?>/assets/images/countries/russia.jpg" class="gallery-image">
+                <div class="gallery-image-wrapper">
+                    <img src="<?php echo SITE_PATH ?>/assets/images/countries/russia.jpg" class="img-fluid" alt="...">
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-2 col-sm-12">
+            <a href="<?php echo SITE_PATH ?>/assets/images/countries/kyrgyzstan.jpg" class="gallery-image">
+                <div class="gallery-image-wrapper">
+                    <img src="<?php echo SITE_PATH ?>/assets/images/countries/kyrgyzstan.jpg" class="img-fluid" alt="...">
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-2 col-sm-12">
+            <a href="<?php echo SITE_PATH ?>/assets/images/countries/nepal.jpg" class="gallery-image">
+                <div class="gallery-image-wrapper">
+                    <img src="<?php echo SITE_PATH ?>/assets/images/countries/nepal.jpg" class="img-fluid" alt="...">
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-2 col-sm-12">
+            <a href="<?php echo SITE_PATH ?>/assets/images/countries/russia.jpg" class="gallery-image">
+                <div class="gallery-image-wrapper">
+                    <img src="<?php echo SITE_PATH ?>/assets/images/countries/russia.jpg" class="img-fluid" alt="...">
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-2 col-sm-12">
+            <a href="<?php echo SITE_PATH ?>/assets/images/countries/bangladesh.jpg" class="gallery-image">
+                <div class="gallery-image-wrapper">
+                    <img src="<?php echo SITE_PATH ?>/assets/images/countries/bangladesh.jpg" class="img-fluid" alt="...">
+                </div>
+            </a>
         </div>
     </div>
 </div>
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="<?php echo SITE_PATH;?>/js/magnific-popup/jquery.magnific-popup.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('.gallery-image').magnificPopup({
+            type:'image',
+            gallery:{
+                enabled:true
+            }
+        });
+    });
+</script>
+
 <?php
 include_once("assets/footer.php");
 ?>
