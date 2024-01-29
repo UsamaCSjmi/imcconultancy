@@ -26,7 +26,7 @@ elseif($router == '/university' || preg_match("/university\/*/i",$router)){
     // }
     include_once('university.php');
 }
-elseif($router=='/About'){
+elseif($router=='/about'){
     include_once('About.php');
 }
 else{

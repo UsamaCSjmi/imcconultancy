@@ -27,7 +27,7 @@ $universities = $universityObj->getAllUniversities();
                     <a class="nav-link <?php if($current_page=="home"){echo "active";}?>" aria-current="page"  href="<?php echo SITE_PATH;?>">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php if($current_page=="about"){echo "active";}?>" href="#">About Us</a>
+                    <a class="nav-link <?php if($current_page=="about"){echo "active";}?>" href="<?php echo SITE_PATH;?>/about">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
