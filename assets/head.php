@@ -48,11 +48,15 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
+
+    <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/style.css?v=<?php echo time()?>" />
     <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/style.css?v=<?php echo time()?>" />
     <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/Main.css?v=<?php echo time()?>" />
     <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/Responsive.css?v=<?php echo time()?>" />
     <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/About.css?v=<?php echo time()?>" />
     <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/About_responsive.css?v=<?php echo time()?>" />
+    <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/Contact.css?v=<?php echo time()?>" />
+    <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/Contact_responsive.css?v=<?php echo time()?>" />
 
     <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/Header.css" />
     <link rel="stylesheet" href="<?php echo SITE_PATH;?>/css/Footer.css" />

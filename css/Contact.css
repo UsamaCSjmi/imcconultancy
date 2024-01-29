@@ -1,0 +1,55 @@
+
+.contact_container{
+  height: 120vh;
+  width: 100%;
+  background-color: red;
+  
+}
+  .contactdetail1{
+    background-color: blanchedalmond;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+
+  .contactdetail{
+    margin-top: 30px;
+    display: flex;
+    height: 40vh;
+    width: 28vw;
+    padding: 10px;
+    gap: 10px;
+    background-color: aqua;
+    
+  }
+  .detail{
+    height: 100%;
+    width: 80%;
+    background-color: greenyellow;
+  }
+  .contactdetail h3{
+    color: red;
+    font-size: 20px;
+    display: inline-block;
+    background-color: green;
+  }
+.icon{ 
+  margin-top: 10px;
+  height: 55px;
+  width: 55px;
+  border: 2px solid;
+ border-radius: 50%;
+}
+  .contactimg {
+    position: relative;
+  }
+  .contactimg h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 6vw;
+    font-weight: 700;
+    /* -ms-transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
+  }
