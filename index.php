@@ -7,7 +7,7 @@ if($router == '/'){
     include_once('home.php');
 }
 elseif($router == '/about'){
-    include_once('about.php');
+    include_once('About.php');
 }
 elseif($router == '/gallery'){
     include_once('gallery.php');
