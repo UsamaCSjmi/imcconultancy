@@ -6,10 +6,10 @@ $router = str_replace(BASE_PATH,'',$request);
 if($router == '/'){
     include_once('home.php');
 }
-if($router == '/about'){
+elseif($router == '/about'){
     include_once('about.php');
 }
-if($router == '/gallery'){
+elseif($router == '/gallery'){
     include_once('gallery.php');
 }
 elseif($router == '/mbbs' || preg_match("/mbbs\/*/i",$router)){
