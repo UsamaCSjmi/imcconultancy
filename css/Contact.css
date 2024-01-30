@@ -1,37 +1,53 @@
 
-.contact_container{
-  height: 120vh;
+.Contact_containerbody{
+  /* height: 120vh; */
   width: 100%;
   background-color: red;
   
 }
+.contactimg {
+  position: relative;
+}
+.contactimg h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 6vw;
+  font-weight: 700;
+  /* -ms-transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
+}
   .contactdetail1{
     background-color: blanchedalmond;
+    height: 50vh;
+    width: 100%;
+    margin-top: 60px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   }
 
   .contactdetail{
-    margin-top: 30px;
+    /* margin-top: 50px; */
     display: flex;
-    height: 40vh;
+    height: 75%;
     width: 28vw;
     padding: 10px;
     gap: 10px;
-    background-color: aqua;
+    /* background-color: aqua; */
     
   }
   .detail{
     height: 100%;
     width: 80%;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
   }
   .contactdetail h3{
     color: red;
     font-size: 20px;
     display: inline-block;
-    background-color: green;
+    /* background-color: green; */
   }
 .icon{ 
   margin-top: 10px;
@@ -40,16 +56,55 @@
   border: 2px solid;
  border-radius: 50%;
 }
-  .contactimg {
-    position: relative;
-  }
-  .contactimg h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-    font-size: 6vw;
-    font-weight: 700;
-    /* -ms-transform: translate(-50%, -50%); */
-    transform: translate(-50%, -50%);
-  }
+h3{
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  background-color: white;
+  /* margin: auto; */
+  align-items: center;
+  margin-top: 80px;
+  color: #07294d;
+  
+}
+.contact_form{
+  background-color: aqua;
+  height: 100vh;
+  width: 100%;
+   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+.contact_form form{
+  width: 56vw;
+  height: 97vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: blueviolet;
+}
+.contact_form form input{
+  /* display: inline-block; */
+  /* margin: auto; */
+  padding: 12px;
+    width: 25vw;
+    margin: 16px;
+}
+#textarea{
+      width: 54vw;
+      margin: 16px;
+}
+
+
+.contact_form form button{
+  background-color: #07294d;
+  width: 9vw;
+  padding: 5px;
+  color: white;
+  font-size: 20px;
+}

@@ -7,7 +7,7 @@ if($router == '/'){
     include_once('home.php');
 }
 if($router == '/about'){
-    include_once('about.php');
+    include_once('About.php');
 }
 
 if($router == '/gallery'){
@@ -21,7 +21,7 @@ elseif($router == '/university' || preg_match("/university\/*/i",$router)){
     $arr = explode('/',$router);
     include_once('university.php');
 }
-else if($router == '/Contact'){
+else if($router =='/contact'){
     include_once('Contact.php');
 }
 else{
