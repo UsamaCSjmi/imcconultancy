@@ -63,7 +63,7 @@ $universities = $universityObj->getAllUniversities();
                     <a class="nav-link <?php if($current_page=="faq"){echo "active";}?>" href="#">FAQ's</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php if($current_page=="contact"){echo "active";}?>" href="#">Contact Us</a>
+                    <a class="nav-link <?php if($current_page=="contact"){echo "active";}?>" href="<?php echo SITE_PATH;?>/contact">Contact Us</a>
                 </li>
                 <li class="nav-item">
                     <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#applyNow">
