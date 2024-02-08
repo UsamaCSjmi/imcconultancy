@@ -6,16 +6,16 @@ include_once("assets/header.php");
   <div id="carouselExampleFade" class="carousel slide carousel-fade">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="<?php echo SITE_PATH ?>/assets/images/slider/Slider-01.jpg" alt="First slide">
-        <div class="carousel-caption d-none d-md-block">
+        <img class="d-block w-100" src="<?php echo SITE_PATH ?>/assets/images/slider/banner.jpeg" alt="First slide">
+        <!-- <div class="carousel-caption d-none d-md-block">
           <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsam.</h5>
-        </div>
+        </div> -->
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="<?php echo SITE_PATH ?>/assets/images/slider/Slider-02.jpg" alt="Second slide">
-        <div class="carousel-caption d-none d-md-block">
+        <img class="d-block w-100" src="<?php echo SITE_PATH ?>/assets/images/slider/banner2.jpeg" alt="Second slide">
+        <!-- <div class="carousel-caption d-none d-md-block">
           <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsam.</h5>
-        </div>
+        </div> -->
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
