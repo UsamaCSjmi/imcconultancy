@@ -5,7 +5,7 @@ include_once("assets/header.php");
 
 
   <div class="contactimg">
-    <img src="contact_img/Contact-US.jpg" class="card-img-top" alt="...">
+    <img src="assets/images/contact_img/Contact-US.jpg" class="card-img-top" alt="...">
     <h1> Contact Us </h1>
   </div>
 
