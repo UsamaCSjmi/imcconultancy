@@ -4,7 +4,7 @@ include_once("assets/header.php");
 
 <div class="About_container">
   <div class="aboutimg">
-    <img src="About_image/About-Us.jpg" class="card-img-top" alt="...">
+    <img src="assets/images/About_image/About-Us.jpg" class="card-img-top" alt="...">
     <h1> About-Us </h1>
   </div>
   <div class="about_section">
@@ -18,12 +18,12 @@ include_once("assets/header.php");
       <button>Apply Now</button>
     </div>
     <div class="section_right">
-      <div class="sectionimg1"><img src="About_image/About_MBBS Abroad_files/190.jpg" class="card-img-top" alt="...">
-        <img src="About_image/About_MBBS Abroad_files/190.jpg" class="card-img-top" alt="...">
+      <div class="sectionimg1"><img src="assets/images/About_image/190.jpg" class="card-img-top" alt="...">
+        <img src="assets/images/About_image/190.jpg" class="card-img-top" alt="...">
       </div>
       <!-- <div class="sectionimg"> </div> -->
-      <div class="sectionimg2"> <img src="About_image/About_MBBS Abroad_files/190.jpg" class="card-img-top" alt="...">
-        <img src="About_image/About_MBBS Abroad_files/190.jpg" class="card-img-top" alt="...">
+      <div class="sectionimg2"> <img src="assets/images/About_image/190.jpg" class="card-img-top" alt="...">
+        <img src="assets/images/About_image/190.jpg" class="card-img-top" alt="...">
       </div>
       <!-- <div class="sectionimg"> </div> -->
     </div>
@@ -31,34 +31,34 @@ include_once("assets/header.php");
 
   <div class="service_container">
     <div class="image-contaier">
-      <img src="About_image/About_MBBS Abroad_files/342x524.jpg" alt="...">
+      <img src="assets/images/About_image/342x524.jpg" alt="...">
     </div>
     <div class="list-container">
       <div class="left_list">
         <div class="list-items">
-          <img src="About_image/icon-student2.webp" alt="...">
+          <img src="assets/images/About_image/icon-student2.webp" alt="...">
           <p> 500+ <br> Students</p>
         </div>
         <div class="list-items">
-          <img src="About_image/icon-student2.webp" alt="...">
+          <img src="assets/images/About_image/icon-student2.webp" alt="...">
           <p> 500+ <br> Students</p>
         </div>
         <div class="list-items">
-          <img src="About_image/icon-student2.webp" alt="...">
+          <img src="assets/images/About_image/icon-student2.webp" alt="...">
           <p> 500+ <br> Students</p>
         </div>
       </div>
       <div class="right_list">
       <div class="list-items">
-          <img src="About_image/icon-student2.webp" alt="...">
+          <img src="assets/images/About_image/icon-student2.webp" alt="...">
           <p> 500+ <br> Students</p>
         </div>
         <div class="list-items">
-          <img src="About_image/icon-student2.webp" alt="...">
+          <img src="assets/images/About_image/icon-student2.webp" alt="...">
           <p> 500+ <br> Students</p>
         </div>
         <div class="list-items">
-          <img src="About_image/icon-student2.webp" alt="...">
+          <img src="assets/images/About_image/icon-student2.webp" alt="...">
           <p> 500+ <br> Students</p>
         </div>
       </div>
