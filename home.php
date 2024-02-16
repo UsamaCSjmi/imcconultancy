@@ -39,7 +39,7 @@ include_once("assets/header.php");
       <h1> Get <span> Top level <br>Career</span> Guidence</h1>
     </div>
     <div class="image-container">
-      <img class="career_image" src="<?php echo SITE_PATH ?>/home_img/h1.jpg" alt="">
+      <img class="career_image" src="<?php echo SITE_PATH ?>/assets/images/home_img/Dream-College.png" alt="">
     </div>
 
 
@@ -191,13 +191,13 @@ include_once("assets/header.php");
       <div id="carouselExampleControlsNoTouching" class="carousel slide vlet_img" data-bs-touch="false">
         <div class="carousel-inner">
           <div class="carousel-item">
-            <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/h4.jpg" alt="">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/home_img/h4.jpg" alt="">
           </div>
           <div class="carousel-item">
-            <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/h5.jpg" alt="">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/home_img/h5.jpg" alt="">
           </div>
           <div class="carousel-item active">
-            <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/h3.jpg" alt="">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/home_img/h3.jpg" alt="">
           </div>
         </div>
         <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControlsNoTouching"
@@ -240,7 +240,7 @@ include_once("assets/header.php");
         ?>
         <div class="col ">
           <a href="<?php echo SITE_PATH . "/mbbs-in-" . strtolower($country['name']) ?>" class="card ">
-            <img class="vimg " src="<?php echo SITE_PATH ?>/assets/images/countries/<?php echo $country['image']; ?>"
+            <img class="vimg " src="<?php echo SITE_PATH ?>/assets/images/countries_thumbnails/<?php echo str_replace("jpg","png",$country['image']); ?>"
               alt="<?php echo "MBBS in " . $country['name']; ?>">
             <div class="card-body">
               <h5 class="card-title ">MBBS in
@@ -267,7 +267,7 @@ include_once("assets/header.php");
 
     </div>
     <div class="review_image">
-      <img src="<?php echo SITE_PATH ?>/home_img/reviewimg.jpg" alt="">
+      <img src="<?php echo SITE_PATH ?>/assets/images/home_img/Our-Student-Review.png" alt="">
 
     </div>
     <div class="review_text2">Best pleasure rationally encounter consequences that are very nice a again is there anyone
@@ -311,7 +311,7 @@ include_once("assets/header.php");
     </div>
     <div class="card-group">
   <div class="card">
-    <img src="home_img/blogHostel.jpg" class="card-img-top" alt="...">
+    <img src="<?php echo SITE_PATH ?>/assets/images/home_img/blog-1.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -321,7 +321,7 @@ include_once("assets/header.php");
     </div>
   </div>
   <div class="card">
-    <img src="home_img/blogMedical-Lab.jpg" class="card-img-top" alt="...">
+    <img src="<?php echo SITE_PATH ?>/assets/images/home_img/blogMedical-Lab.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -331,7 +331,7 @@ include_once("assets/header.php");
     </div>
   </div>
   <div class="card">
-    <img src="home_img/blogimg1.jpg" class="card-img-top" alt="...">
+    <img src="<?php echo SITE_PATH ?>/assets/images/home_img/blogimg1.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
