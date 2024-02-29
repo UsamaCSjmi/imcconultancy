@@ -70,7 +70,14 @@ include_once("assets/header.php");
                 <div class="w-100 row">
                   <div class="col-lg-4 col-md-6 col-sm-12 ">
                     <div class="card m-2">
-                      <img src="<?php echo SITE_PATH . "/assets/images/countries/" . $university['cimage'] ?>"
+                      <img src="<?php
+                      if(isset($university['uimage']) && $university['uimage']!=""){
+                        echo SITE_PATH . "/assets/images/universities/" . $university['uimage'];
+                      }
+                      else{
+                        echo SITE_PATH . "/assets/images/countries/" . $university['cimage'];
+                      }
+                       ?>"
                         class="card-img-top" alt="<?php echo $university['cname'] ?>" style="height:10rem">
                       <div class="card-body">
                         <h5 class="card-title">
@@ -95,7 +102,14 @@ include_once("assets/header.php");
                     <div class="w-100 row">
                       <div class="col-lg-4 col-md-6 col-sm-12 ">
                         <div class="card m-2">
-                          <img src="<?php echo SITE_PATH . "/assets/images/countries/" . $university['cimage'] ?>"
+                          <img src="<?php
+                      if(isset($university['uimage']) && $university['uimage']!=""){
+                        echo SITE_PATH . "/assets/images/universities/" . $university['uimage'];
+                      }
+                      else{
+                        echo SITE_PATH . "/assets/images/countries/" . $university['cimage'];
+                      }
+                       ?>"
                             class="card-img-top" alt="<?php echo $university['cname'] ?>" style="height:10rem">
                           <div class="card-body">
                             <h5 class="card-title">
@@ -118,7 +132,14 @@ include_once("assets/header.php");
               ?>
                       <div class="col-lg-4 col-md-6 col-sm-12 ">
                         <div class="card m-2">
-                          <img src="<?php echo SITE_PATH . "/assets/images/countries/" . $university['cimage'] ?>"
+                          <img src="<?php
+                      if(isset($university['uimage']) && $university['uimage']!=""){
+                        echo SITE_PATH . "/assets/images/universities/" . $university['uimage'];
+                      }
+                      else{
+                        echo SITE_PATH . "/assets/images/countries/" . $university['cimage'];
+                      }
+                       ?>"
                             class="card-img-top" alt="<?php echo $university['cname'] ?>" style="height:10rem">
                           <div class="card-body">
                             <h5 class="card-title">
@@ -143,7 +164,14 @@ include_once("assets/header.php");
               ?>
                   <div class="col-lg-4 col-md-6 col-sm-12 ">
                     <div class="card m-2">
-                      <img src="<?php echo SITE_PATH . "/assets/images/countries/" . $university['cimage'] ?>"
+                      <img src="<?php
+                      if(isset($university['uimage']) && $university['uimage']!=""){
+                        echo SITE_PATH . "/assets/images/universities/" . $university['uimage'];
+                      }
+                      else{
+                        echo SITE_PATH . "/assets/images/countries/" . $university['cimage'];
+                      }
+                       ?>"
                         class="card-img-top" alt="<?php echo $university['cname'] ?>" style="height:10rem">
                       <div class="card-body">
                         <h5 class="card-title">
@@ -321,7 +349,7 @@ include_once("assets/header.php");
     </div>
   </div>
   <div class="card">
-    <img src="<?php echo SITE_PATH ?>/assets/images/home_img/blogMedical-Lab.jpg" class="card-img-top" alt="...">
+    <img src="<?php echo SITE_PATH ?>/assets/images/home_img/card-2.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -331,7 +359,7 @@ include_once("assets/header.php");
     </div>
   </div>
   <div class="card">
-    <img src="<?php echo SITE_PATH ?>/assets/images/home_img/blogimg1.jpg" class="card-img-top" alt="...">
+    <img src="<?php echo SITE_PATH ?>/assets/images/home_img/card-3.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>

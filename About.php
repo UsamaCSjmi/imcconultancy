@@ -4,8 +4,8 @@ include_once("assets/header.php");
 
 <div class="About_container">
   <div class="aboutimg">
-    <img src="assets/images/About_image/About-Us.jpg" class="card-img-top" alt="...">
-    <h1> About-Us </h1>
+    <img src="assets/images/About_image/About-Us.png" class="card-img-top" alt="...">
+    <!-- <h1> About-Us </h1> -->
   </div>
   <div class="about_section">
     <div class="section_left">
@@ -18,12 +18,12 @@ include_once("assets/header.php");
       <button>Apply Now</button>
     </div>
     <div class="section_right">
-      <div class="sectionimg1"><img src="assets/images/About_image/190.jpg" class="card-img-top" alt="...">
-        <img src="assets/images/About_image/190.jpg" class="card-img-top" alt="...">
+      <div class="sectionimg1"><img src="assets/images/About_image/about-section-1.png" class="card-img-top" alt="...">
+        <img src="assets/images/About_image/about-section-2.png" class="card-img-top" alt="...">
       </div>
       <!-- <div class="sectionimg"> </div> -->
-      <div class="sectionimg2"> <img src="assets/images/About_image/190.jpg" class="card-img-top" alt="...">
-        <img src="assets/images/About_image/190.jpg" class="card-img-top" alt="...">
+      <div class="sectionimg2"> <img src="assets/images/About_image/about-section-3.png" class="card-img-top" alt="...">
+        <img src="assets/images/About_image/about-section-4.png" class="card-img-top" alt="...">
       </div>
       <!-- <div class="sectionimg"> </div> -->
     </div>
@@ -70,13 +70,13 @@ include_once("assets/header.php");
       <div id="carouselExampleControlsNoTouching" class="carousel slide vlet_img" data-bs-touch="false">
         <div class="carousel-inner">
           <div class="carousel-item">
-            <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/h4.jpg" alt="">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/home_img/h4.jpg" alt="">
           </div>
           <div class="carousel-item">
-            <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/h5.jpg" alt="">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/home_img/h5.jpg" alt="">
           </div>
           <div class="carousel-item active">
-            <img class="vimg" src="<?php echo SITE_PATH ?>/home_img/h3.jpg" alt="">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/home_img/h3.jpg" alt="">
           </div>
         </div>
         <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControlsNoTouching"
