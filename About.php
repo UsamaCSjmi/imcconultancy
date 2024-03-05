@@ -31,7 +31,7 @@ include_once("assets/header.php");
 
   <div class="service_container">
     <div class="image-contaier">
-      <img src="assets/images/About_image/342x524.jpg" alt="...">
+      <img src="assets/images/About_image/About-achievement.png" alt="...">
     </div>
     <div class="list-container">
       <div class="left_list">
