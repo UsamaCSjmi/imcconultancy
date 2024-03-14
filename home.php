@@ -218,14 +218,47 @@ include_once("assets/header.php");
     <div class="vleft">
       <div id="carouselExampleControlsNoTouching" class="carousel slide vlet_img" data-bs-touch="false">
         <div class="carousel-inner">
-          <div class="carousel-item">
-            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/home_img/h4.jpg" alt="">
-          </div>
-          <div class="carousel-item">
-            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/home_img/h5.jpg" alt="">
-          </div>
           <div class="carousel-item active">
-            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/home_img/h3.jpg" alt="">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/visitors/1.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/visitors/2.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/visitors/3.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/visitors/4.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/visitors/5.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/visitors/6.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/visitors/7.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/visitors/8.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/visitors/9.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/visitors/10.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/visitors/11.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/visitors/12.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/visitors/13.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/visitors/14.png" alt="">
           </div>
         </div>
         <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControlsNoTouching"
