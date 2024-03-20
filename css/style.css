@@ -89,6 +89,9 @@ body{
   border-top: 3px solid #0c8b51;
   font-size: 18px;
 }
+.country-text li{
+  list-style: unset;
+}
 .box-shadow{
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.151);
   border-radius: 5px;

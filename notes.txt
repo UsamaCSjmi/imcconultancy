@@ -22,3 +22,7 @@ git branch danish
 git switch danish
 git branch 
 --------After these commands the branch would changed to *danish(in green)---------
+
+logo
+gapping in mobile
+awards section center alignment in mobile

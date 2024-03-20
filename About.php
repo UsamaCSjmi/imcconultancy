@@ -10,10 +10,11 @@ include_once("assets/header.php");
   <div class="about_section">
     <div class="section_left">
       <h2>Best <span>MBBS Abroad</span><br>Consultancy</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tempora laborum, eveniet voluptates
-        repellendus libero veniam voluptatum numquam consectetur adipisicing elit. Blanditiis tempora laborum,
-        eveniet voluptates repellendus liberob <br>
-        <br> veniam voluptatum numquam modi nobis ullam! dipisicing elit. Blanditiis tempora laborum,
+      <p>
+        Welcome to IMC Educational Consultancy, your gateway to fulfilling the dream of studying MBBS abroad. With a mission to provide comprehensive and reliable educational services, we specialize in facilitating admissions to esteemed medical universities in Kyrgyzstan, Bangladesh, Russia, and Nepal from India.
+        <br>
+        <br>
+        At IMC, we understand the challenges students face in navigating the complexities of international education. That's why we offer personalized guidance and support throughout the entire process, from university selection to visa assistance, ensuring a seamless experience for our students.
       </p>
       <button>Apply Now</button>
     </div>

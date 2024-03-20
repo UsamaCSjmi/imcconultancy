@@ -16,22 +16,21 @@ include_once("assets/header.php");
       <div class="icon"></div>
       <div class="detail">
         <h3>Address</h3>
-        <p> ahaad khan iliyas ahamad what Lorem ahaad khan iliyas ahamad what Lorem ilyas ahaad khan iliyas ahamad
-          what Lorem, ipsum dolor. Lorem ipsum, .</p>
+        <p> 306, 3rd floor, Living Style Mall, Jasola Vihar, New Delhi-110025</p>
       </div>
     </div>
     <div class="contactdetail">
       <div class="icon"></div>
       <div class="detail">
         <h3>Phone</h3>
-        <p> ilyas ahaad khan iliyas ahamad what dolor sit amet consectetur adipisicing elit. Tenetur</p>
+        <p> <a href="tel:+917488919466">+91-7488919466</a></p>
       </div>
     </div>
     <div class="contactdetail">
       <div class="icon"></div>
       <div class="detail">
-        <h3>Web</h3>
-        <p> dolor sit amet consectetur adipisicing elit. Tenetur ilyas ahaad khan iliyas ahamad what</p>
+        <h3>E-Mail</h3>
+        <p> <a href="mailto:imcconsultancy01@gmail.com">imcconsultancy01@gmail.com</a></p>
       </div>
     </div>
   </div>
@@ -57,7 +56,10 @@ include_once("assets/header.php");
 
   <div class="subscribe_section">
     <div class="subscribe_detail">
-          <div class="subscribe_left"><h1>Subscribe our <br> Nesletter</h1><br> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati fuga enim autem harum, velit .</p> </div>
+          <div class="subscribe_left">
+            <h1>Subscribe our <br> Nesletter</h1><br> 
+            <p>Stay updated on MBBS abroad opportunities. Subscribe to our newsletter for the latest updates!</p> 
+          </div>
           <div class="subscribe_right"><input type="text" placeholder = "Enter email here">
             <button>Subscribe now</button>
         </div>
