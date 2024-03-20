@@ -6,7 +6,10 @@
                             <img src="<?php echo SITE_PATH;?>/assets/images/logo.png" width="80" height="80" alt="Logo IMC Consultancy">
                             <span class="h5">IMC Cnsultancy</span>
                         </a>
-                        <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, mollitia.</p>
+                        <p class="text-light">
+                            Welcome to IMC Educational Consultancy, your gateway to fulfilling the dream of studying MBBS abroad...
+                        </p>
+                        <a class="text-light" href="about">Read More</a>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <p class="h3 text-light mb-3">MBBS Abroad</p>
@@ -23,10 +26,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <p class="h3 text-light mb-3">Quick Links</p>
                         <ul class="text-light footer-nav p-0">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Galley</a></li>
-                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="<?php echo SITE_PATH;?>/about">About</a></li>
+                            <li><a href="<?php echo SITE_PATH;?>/gallery">Galley</a></li>
+                            <li><a href="<?php echo SITE_PATH;?>/contact">Contact Us</a></li>
+                            <!-- <li><a href="#">FAQ's</a></li> -->
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">

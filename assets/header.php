@@ -59,9 +59,9 @@ $universities = $universityObj->getAllUniversities();
                 <li class="nav-item">
                     <a class="nav-link <?php if($current_page=="gallery"){echo "active";}?>" href="<?php echo SITE_PATH;?>/gallery">Gallery</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link <?php if($current_page=="faq"){echo "active";}?>" href="#">FAQ's</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link <?php if($current_page=="contact"){echo "active";}?>" href="<?php echo SITE_PATH;?>/contact">Contact Us</a>
                 </li>
