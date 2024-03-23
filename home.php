@@ -47,7 +47,7 @@ include_once("assets/header.php");
 
 
 
-  <div class="container">
+  <div class="container" id="universities">
     <h2 class="my-4 text-center">
       <span class="big-heading">
         Here is our Top Universities
@@ -320,10 +320,9 @@ include_once("assets/header.php");
 
   <div class="review_section">
     <div class="review_text">
-      <h2>Our Students Review</h2>
+      <h2>Benefits of Study MBBS abroad</h2>
       <hr>
-      <p> Even slightly believable. If you are going use a passage of Lorem Ipsum need desire to obtain pain of itself,
-        because it is pain de sires to obtain pain of itself occur
+      <p> Students rave about their experiences with IMC Educational Consultancy. Read their reviews to learn how we've helped them achieve their dreams of studying MBBS abroad.
       </p>
 
     </div>
@@ -347,16 +346,16 @@ include_once("assets/header.php");
       <p>Students</p>
     </div>
     <div class="review_number">
-      <h2>500+ <br></h2>
-      <p>Students</p>
+      <h2>10+ <br></h2>
+      <p>Scholarships</p>
     </div>
     <div class="review_number">
-      <h2>500+ <br></h2>
-      <p>Students</p>
+      <h2>20+ <br></h2>
+      <p>Universities</p>
     </div>
     <div class="review_number">
-      <h2>500+ <br></h2>
-      <p>Students</p>
+      <h2>5+ <br></h2>
+      <p>Programmes</p>
     </div>
   </div>
 

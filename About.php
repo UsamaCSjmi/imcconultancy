@@ -42,25 +42,25 @@ include_once("assets/header.php");
         </div>
         <div class="list-items">
           <img src="assets/images/About_image/icon-student2.webp" alt="...">
-          <p> 500+ <br> Students</p>
+          <p> 10+ <br> Scholarships</p>
         </div>
         <div class="list-items">
           <img src="assets/images/About_image/icon-student2.webp" alt="...">
-          <p> 500+ <br> Students</p>
+          <p> 20+ <br> Universities</p>
         </div>
       </div>
       <div class="right_list">
       <div class="list-items">
           <img src="assets/images/About_image/icon-student2.webp" alt="...">
-          <p> 500+ <br> Students</p>
+          <p> 5+ <br> Programmes</p>
         </div>
         <div class="list-items">
           <img src="assets/images/About_image/icon-student2.webp" alt="...">
-          <p> 500+ <br> Students</p>
+          <p> 10+ <br> Branches</p>
         </div>
         <div class="list-items">
           <img src="assets/images/About_image/icon-student2.webp" alt="...">
-          <p> 500+ <br> Students</p>
+          <p> 50+ <br> Batches</p>
         </div>
       </div>
     </div>
