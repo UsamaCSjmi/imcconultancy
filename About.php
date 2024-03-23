@@ -70,7 +70,7 @@ include_once("assets/header.php");
     <div class="vleft">
       <div id="carouselExampleControlsNoTouching" class="carousel slide vlet_img" data-bs-touch="false">
         <div class="carousel-inner">
-        <div class="carousel-item active">
+          <div class="carousel-item active">
             <img class="vimg" src="<?php echo SITE_PATH ?>/assets/images/visitors/1.png" alt="">
           </div>
           <div class="carousel-item">
@@ -130,11 +130,10 @@ include_once("assets/header.php");
         <h2>Visit Most Popular <br> Universites</h2>
         <hr>
         <p>For MBBS Abroad</p>
-        <h3>or watch What our <br> past student's Parents has to say</h3>
+        <h3>Explore our top-rated universities<br> for MBBS abroad opportunities.</h3>
       </div>
     </div>
   </div>
-
 
 
 

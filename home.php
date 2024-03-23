@@ -278,7 +278,7 @@ include_once("assets/header.php");
         <h2>Visit Most Popular <br> Universites</h2>
         <hr>
         <p>For MBBS Abroad</p>
-        <h3>or watch What our <br> past student's Parents has to say</h3>
+        <h3>Explore our top-rated universities<br> for MBBS abroad opportunities.</h3>
       </div>
     </div>
   </div>
