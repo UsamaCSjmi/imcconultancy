@@ -37,7 +37,7 @@
                         <p class="text-light">
                             306, 3rd floor, Living Style Mall, Jasola Vihar, New Delhi-110025
                         </p>
-                        <p class="text-light">Phoe : <a href="tel:+917488919466">+91-7488919466</a></p>
+                        <p class="text-light">Phone : <a href="tel:+917488919466">+91-7488919466</a></p>
                         <p class="text-light">Email : <a href="mailto:imcconsultancy01@gmail.com">imcconsultancy01@gmail.com</a></p>
                     </div>
                 </div>
@@ -69,7 +69,10 @@
                                 <input type="email" class="form-control" id="inputEmail" placeholder="E-Mail Address*">
                             </div>
                             <div class="form-group my-3">
-                                <input type="text" class="form-control" id="inputScore" placeholder="Neet Score">
+                                <input type="text" class="form-control" id="inputScore" placeholder="Neet Score / JEE Score">
+                            </div>
+                            <div class="form-group my-3">
+                                <input type="text" class="form-control" id="course" placeholder="Course">
                             </div>
                             <div class="form-group my-3">
                                 <input type="text" class="form-control" id="inputCity" placeholder="City">

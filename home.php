@@ -31,9 +31,9 @@ include_once("assets/header.php");
 
   <div class="career_Guidance">
     <div class="left">
-      <h3>20+ Universites</h3>
-      <h3>Expert Counsellers</h3>
-      <h3>500+ Students</h3>
+      <h3>1000+ Universites</h3>
+      <h3>5+ Expert Counsellers</h3>
+      <h3>5000+ Students</h3>
     </div>
     <div class="right">
       <h1> Get <span> Top level <br>Career</span> Guidence</h1>
@@ -86,8 +86,6 @@ include_once("assets/header.php");
                         <p class="card-text">
                           MBBS in
                           <?php echo $university['cname'] ?>
-                          <br>
-                          <span class="text-danger">Fees : 2.5 Lacs/year</span>
                         </p>
                         <a href="<?php echo SITE_PATH ?>/university-<?php echo strtolower($universityUrl) ?>"
                           class="btn btn-dark">View</a>
@@ -118,8 +116,6 @@ include_once("assets/header.php");
                             <p class="card-text">
                               MBBS in
                               <?php echo $university['cname'] ?>
-                              <br>
-                              <span class="text-danger">Fees : 2.5 Lacs/year</span>
                             </p>
                             <a href="<?php echo SITE_PATH ?>/university-<?php echo strtolower($universityUrl) ?>"
                               class="btn btn-dark">View</a>
@@ -148,8 +144,6 @@ include_once("assets/header.php");
                             <p class="card-text">
                               MBBS in
                               <?php echo $university['cname'] ?>
-                              <br>
-                              <span class="text-danger">Fees : 2.5 Lacs/year</span>
                             </p>
                             <a href="<?php echo SITE_PATH ?>/university-<?php echo strtolower($universityUrl) ?>"
                               class="btn btn-dark">View</a>
@@ -180,8 +174,6 @@ include_once("assets/header.php");
                         <p class="card-text">
                           MBBS in
                           <?php echo $university['cname'] ?>
-                          <br>
-                          <span class="text-danger">Fees : 2.5 Lacs/year</span>
                         </p>
                         <a href="<?php echo SITE_PATH ?>/university-<?php echo strtolower($universityUrl) ?>"
                           class="btn btn-dark">View</a>
@@ -342,19 +334,19 @@ include_once("assets/header.php");
 
   <div class="review_sec_bottom">
     <div class="review_number">
-      <h2>500+ <br></h2>
+      <h2>5000+ <br></h2>
       <p>Students</p>
     </div>
     <div class="review_number">
-      <h2>10+ <br></h2>
+      <h2>100+ <br></h2>
       <p>Scholarships</p>
     </div>
     <div class="review_number">
-      <h2>20+ <br></h2>
+      <h2>1000+ <br></h2>
       <p>Universities</p>
     </div>
     <div class="review_number">
-      <h2>5+ <br></h2>
+      <h2>20+ <br></h2>
       <p>Programmes</p>
     </div>
   </div>

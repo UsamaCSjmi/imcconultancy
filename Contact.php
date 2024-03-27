@@ -40,11 +40,11 @@ include_once("assets/header.php");
 
     <form action="">
       <!-- <p>--</p> -->
-      <div><input type="text" placeholder="name"></div>
-      <div><input type="number" placeholder="phone"><br></div>
+      <div><input type="text" placeholder="Name"></div>
+      <div><input type="text" placeholder="Course"><br></div>
       <!-- <div><input type="number" placeholder ="phone"></div> -->
       <div><input type="email" placeholder="email"></div>
-      <div><input type="number" placeholder="Neet Score"></div>
+      <div><input type="number" placeholder="Neet/JEE Score"></div>
       <div><input type="text" placeholder="city"></div>
       <div><input type="text" placeholder="State"><br></div>
       <div><textarea name="" id="textarea" cols="30" rows="10" placeholder="Write here ..."></textarea><br></div>

@@ -38,25 +38,25 @@ include_once("assets/header.php");
       <div class="left_list">
         <div class="list-items">
           <img src="assets/images/About_image/icon-student2.webp" alt="...">
-          <p> 500+ <br> Students</p>
+          <p> 5000+ <br> Students</p>
         </div>
         <div class="list-items">
           <img src="assets/images/About_image/icon-student2.webp" alt="...">
-          <p> 10+ <br> Scholarships</p>
+          <p> 100+ <br> Scholarships</p>
         </div>
         <div class="list-items">
           <img src="assets/images/About_image/icon-student2.webp" alt="...">
-          <p> 20+ <br> Universities</p>
+          <p> 1000+ <br> Universities</p>
         </div>
       </div>
       <div class="right_list">
       <div class="list-items">
           <img src="assets/images/About_image/icon-student2.webp" alt="...">
-          <p> 5+ <br> Programmes</p>
+          <p> 20+ <br> Programmes</p>
         </div>
         <div class="list-items">
           <img src="assets/images/About_image/icon-student2.webp" alt="...">
-          <p> 10+ <br> Branches</p>
+          <p> 100+ <br> Branches</p>
         </div>
         <div class="list-items">
           <img src="assets/images/About_image/icon-student2.webp" alt="...">
