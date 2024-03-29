@@ -351,7 +351,7 @@ include_once("assets/header.php");
     </div>
   </div>
 
-  <div class="container">
+  <!-- <div class="container">
     <div class="blog_tittle">
       <h1>Latest Blog Post</h1>
       <span class="blog_line">
@@ -362,40 +362,38 @@ include_once("assets/header.php");
         delectus m .</p>
     </div>
     <div class="card-group">
-  <div class="card">
-    <img src="<?php echo SITE_PATH ?>/assets/images/home_img/blog-1.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <div class="card">
+        <img src="<?php echo SITE_PATH ?>/assets/images/home_img/blog-1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="<?php echo SITE_PATH ?>/assets/images/home_img/card-2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="<?php echo SITE_PATH ?>/assets/images/home_img/card-3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
     </div>
-    <div class="card-footer">
-      <small class="text-body-secondary">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img src="<?php echo SITE_PATH ?>/assets/images/home_img/card-2.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-body-secondary">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img src="<?php echo SITE_PATH ?>/assets/images/home_img/card-3.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-body-secondary">Last updated 3 mins ago</small>
-    </div>
-  </div>
-</div>
-
-
-  </div>
+  </div> -->
 
 
 

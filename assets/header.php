@@ -16,7 +16,19 @@ $universities = $universityObj->getAllUniversities();
       <div class="container-fluid">
         <a class="navbar-brand" href="<?php echo SITE_PATH;?>/">
             <img src="<?php echo SITE_PATH;?>/assets/images/logo.png" width="80" height="80" alt="Logo IMC Consultancy">
-            <span class="brand"> IMC Consultancy</span>
+            <span class="brand"> 
+                IMC EDUCATIONAL
+                <div class="brand-bottom"> 
+                    <span class="logo-lines">
+                        <hr>
+                        <hr>
+                        <hr>
+                    </span>
+                    <span>
+                        Consultancy
+                    </span>
+                </div>
+            </span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

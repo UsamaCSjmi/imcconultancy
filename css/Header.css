@@ -47,3 +47,17 @@ left: 100%;
 .dropdown-menu > li:hover > .dropdown-submenu {
 display: block;
 }
+.brand{
+    position: relative;
+}
+.brand-bottom{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    display: flex;
+    font-size: 15px;
+}
+.brand-bottom hr{
+    margin:6px 5px 6px 0px;
+    width: 100px;
+}
