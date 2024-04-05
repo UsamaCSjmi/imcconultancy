@@ -1,38 +1,27 @@
 <?php
 
 // Development Settings Usama
-// define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT'].'/medi'); //edit
-// define('SITE_PATH','http://localhost/development/medi'); //edit
-// define('BASE_PATH','/development/medi'); //Edit path after htdocs in xampp
+define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT'].'/medi'); //edit
+define('SITE_PATH','http://localhost/development/medi'); //edit
+define('BASE_PATH','/development/medi'); //Edit path after htdocs in xampp
 
-// define('DB_NAME', 'imc'); //Edit it
-// define('DB_USER', 'root');
-// define('DB_PASSWORD', '');
-// define('DB_HOST', 'localhost');
-
-
-// Development Settings Danish
-// define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT'].'/imcconultancy'); //edit
-// define('SITE_PATH','http://localhost/imcconultancy'); //edit
-// define('BASE_PATH','/imcconultancy'); //Edit path after htdocs in xampp
-
-// define('DB_NAME', 'imc'); //Edit it
-// define('DB_USER', 'root');
-// define('DB_PASSWORD', '');
-// define('DB_HOST', 'localhost');
+define('DB_NAME', 'imc'); //Edit it
+define('DB_USER', 'root');
+define('DB_PASSWORD', '');
+define('DB_HOST', 'localhost');
 
 
 
 
 // Production Settings
-define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT']);
-define('SITE_PATH','https://development.imcconsultancy.co.in');
-define('BASE_PATH','');
+// define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT']);
+// define('SITE_PATH','https://development.imcconsultancy.co.in');
+// define('BASE_PATH','');
 
-define('DB_NAME', 'u455665005_imc');
-define('DB_USER', 'u455665005_imc');
-define('DB_PASSWORD', 'i+VLYH$u1');
-define('DB_HOST', 'localhost');
+// define('DB_NAME', 'u455665005_imc');
+// define('DB_USER', 'u455665005_imc');
+// define('DB_PASSWORD', 'i+VLYH$u1');
+// define('DB_HOST', 'localhost');
 
 $url = $_SERVER['REQUEST_URI'];
 $current_page = basename($url);
@@ -47,6 +36,7 @@ $description = array(
     "about" => "IMC is India’s most trusted MBBS educational consultancy which helps learners transform their careers studying abroad and get future-ready!",
     "gallery" => "IMC Consultancy Gallery , Colleges ,students, and Our Alumni",
     "contact" => "IMC Consultancy  is Best MBBS  study abroad consultants in India. We provide overseas education counselling, admission assistance.for Medical Studies.",
+    "mbbs-in-india" => "Best MBBS in India",
     "mbbs-in-kyrgyzstan" => "Do you want to achieve your dream for MBBS study in Kyrgyzstan  Learn about the documents and processing fee from our study consultants at IMC.",
     "mbbs-in-bangladesh" => "Best MBBS Educational consultancy for Bangladesh  in India with 100% free consultancy. Join IMC MBBS Education Consultancy taught by subject-matter experts now!",
     "mbbs-in-russia" => "Best MBBS Educational consultancy for Russia in India with 100% free consultancy. Join IMC MBBS Education Consultancy taught by subject-matter experts now!",
@@ -80,6 +70,7 @@ $title = array(
     "about" => "About Us |  IMC- Consultancy",
     "gallery" => "IMC Consultancy | Gallery | IMC",
     "contact" => "Contact Us - IMC Consultancy",
+    "mbbs-in-india" => "Best MBBS in India",
     "mbbs-in-kyrgyzstan" => "#1 MBBS Educational Consultancy for Kyrgyzstan with Free Counsellig",
     "mbbs-in-bangladesh" => "Best MBBS Education Consultancy for Bnagladesh in India with free counselling | 2024",
     "mbbs-in-russia" => "Best MBBS Education Consultancy for Russia in India with free counselling | 2024",

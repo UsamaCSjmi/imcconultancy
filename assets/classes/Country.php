@@ -43,6 +43,13 @@ class Country
         return $result;
     }
 
+    public function getAllAbroadCountry()
+    {
+        $query = "SELECT * FROM countries WHERE status=1 AND NOT name = 'India'";
+        $result = $this->db->select($query);
+        return $result;
+    }
+
 
     public function getCountryById($Countryid)
     {
