@@ -26,6 +26,7 @@ class University
 
     public function getUniversityById($UniversityId)
     {
+        $UniversityId = $this->fm->validation($UniversityId);
         $query = "SELECT u.name as uname, u.image as uimage, c.name as cname, c.image as cimage, c.status FROM universities AS u JOIN countries AS c ON u.country = c.id WHERE u.id='$UniversityId' AND c.status=1;";
         // $query = "SELECT * FROM universities WHERE id = '$UniversityId' ";
         $result = $this->db->select($query);
@@ -34,6 +35,7 @@ class University
 
     public function getUniversityByName($name)
     {
+        $name = $this->fm->validation($name);
         $query = "SELECT u.*, c.name as cname, c.image as cimage, c.status FROM universities AS u JOIN countries AS c ON u.country = c.id WHERE LOWER(u.name) LIKE '%$name%' AND c.status=1;";
         // $query = "SELECT * FROM universities WHERE id = '$UniversityId' ";
         $result = $this->db->select($query);
@@ -49,7 +51,7 @@ class University
 
     public function getUniversityByCountryName($name)
     {
-        
+        $name = $this->fm->validation($name);
         $query = "SELECT u.*, c.* FROM universities AS u JOIN countries AS c ON u.country = c.id WHERE c.name = '$name' AND u.status=1;";
         $result = $this->db->select($query);
         if($result){
@@ -63,8 +65,22 @@ class University
 
     public function getUniversityByCountryId($id)
     {
-        
+        $id = $this->fm->validation($id);
         $query = "SELECT * FROM universities WHERE country = '$id'";
+        $result = $this->db->select($query);
+        if($result){
+            return $result;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public function getUniversityByCountryIdAndCourseId($country,$course)
+    {
+        $country = $this->fm->validation($country);
+        $course = $this->fm->validation($course);
+        $query = "SELECT * FROM universities WHERE country = $country AND course_id = $course";
         $result = $this->db->select($query);
         if($result){
             return $result;

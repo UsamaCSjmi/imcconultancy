@@ -71,6 +71,30 @@ class Country
         }
     }
 
+    public function getCoursesByCountryId($id)
+    {
+        $query = "SELECT courses.name FROM universities,courses WHERE universities.country = $id AND courses.id = universities.course_id GROUP BY courses.id";
+        $result = $this->db->select($query);
+        if($result){
+            return $result;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public function getCountriesByCourseId($id)
+    {
+        $query = "SELECT countries.name FROM universities,countries WHERE universities.course_id = $id AND countries.id = universities.country GROUP BY countries.id";
+        $result = $this->db->select($query);
+        if($result){
+            return $result;
+        }
+        else{
+            return false;
+        }
+    }
+
     public function CountryUpdate($CountryName, $Countryid)
     {
         $CountryName = $this->fm->validation($CountryName);

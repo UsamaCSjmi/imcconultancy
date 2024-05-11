@@ -292,7 +292,7 @@ include_once("assets/header.php");
       while ($country = mysqli_fetch_assoc($countries)) {
         ?>
         <div class="col ">
-          <a href="<?php echo SITE_PATH . "/mbbs-in-" . strtolower($country['name']) ?>" class="card ">
+          <a href="<?php echo SITE_PATH."/".strtolower($country['name']) ?>/mbbs" class="card ">
             <img class="vimg " src="<?php echo SITE_PATH ?>/assets/images/countries_thumbnails/<?php echo str_replace("jpg","png",$country['image']); ?>"
               alt="<?php echo "MBBS in " . $country['name']; ?>">
             <div class="card-body">
@@ -444,7 +444,6 @@ include_once("assets/header.php");
   </div>
 
 </div>
-
 
 <?php
 include_once("assets/footer.php");

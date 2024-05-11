@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://imcconsultancy.in/sitemap.xml

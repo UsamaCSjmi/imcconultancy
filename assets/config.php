@@ -23,6 +23,16 @@ define('DB_HOST', 'localhost');
 // define('DB_PASSWORD', 'i+VLYH$u1');
 // define('DB_HOST', 'localhost');
 
+// Production Settings 2
+// define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT']);
+// define('SITE_PATH','https://imcconsultancy.in');
+// define('BASE_PATH','');
+
+// define('DB_NAME', 'u455665005_imc2');
+// define('DB_USER', 'u455665005_imc2');
+// define('DB_PASSWORD', 'y!$OD4!*zdY5');
+// define('DB_HOST', 'localhost');
+
 $url = $_SERVER['REQUEST_URI'];
 $current_page = basename($url);
 if($current_page == "imcconultancy" || $current_page == "index" ||$current_page == "" || $current_page == "medi" || $current_page == "imc"){

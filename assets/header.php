@@ -1,7 +1,10 @@
 <?php
 require_once('./assets/head.php');
 require_once('./assets/classes/Country.php');
+require_once('./assets/classes/Course.php');
 require_once('./assets/classes/University.php');
+$courseObj = new Course();
+$courses = $courseObj->getAllCourses();
 $countryObj = new Country();
 $countries = $countryObj->getAllCountry();
 $countriesAbroad = $countryObj->getAllAbroadCountry();
@@ -43,49 +46,79 @@ $universities = $universityObj->getAllUniversities();
                     <a class="nav-link <?php if($current_page=="about"){echo "active";}?>" href="<?php echo SITE_PATH;?>/about">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle <?php if($current_page=="mbbs-in-india"){echo "active";}?>" href="<?php echo SITE_PATH;?>/mbbs-in-india" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        MBBS in India
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Colleges in India
                     </a>
+                    <?php
+                    $coursesInIndia = $courseObj->getCoursesInIndia();
+                    if($coursesInIndia){
+                        ?>
+                        
                     <ul class="dropdown-menu">
                         <?php
-                            $id = 6;
-                            $universitiesInCountry = $universityObj->getUniversityByCountryId($id);
-                            while($singleUniversity = mysqli_fetch_array($universitiesInCountry)){
-                                $universityUrl = explode(",", $singleUniversity['name'])[0];
-                                $universityUrl = str_replace(" ", "-", $universityUrl);
-                                ?>
-                                <li>
-                                    <a href="<?php echo SITE_PATH?>/university-<?php echo strtolower($universityUrl) ?>" class="dropdown-item nav-link <?php if($current_page=="university-".strtolower($universityUrl)){echo "active";}?>"><?php echo $singleUniversity['name']?></a>
-                                </li>
-                                <?php
-                            }
+                        while($singleCourseInIndia = mysqli_fetch_array($coursesInIndia)){
+                            $courseUrl = $singleCourseInIndia['name'];
+                            $courseUrl = explode(",", $courseUrl)[0];
+                            $courseUrl = strtolower(str_replace(" ", "-", $courseUrl));
+                            ?>
+                            <li>
+                                <a href="<?php echo SITE_PATH?>/india/<?php echo $courseUrl;?>" class="nav-link dropdown-item"><?php echo $singleCourseInIndia['name'];?> in India</a>
+                                <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left">
+                                    <?php
+                                        $countryId = 6;
+                                        $courseId = $singleCourseInIndia['course_id'];
+                                        $universitiesInCountry = $universityObj->getUniversityByCountryIdAndCourseId($countryId,$courseId);
+                                        if($universitiesInCountry){
+                                            while($singleUniversity = mysqli_fetch_array($universitiesInCountry)){
+                                                $universityUrl = explode(",", $singleUniversity['name'])[0];
+                                                $universityUrl = str_replace(" ", "-", $universityUrl);
+                                                ?>
+                                                <li>
+                                                    <a href="<?php echo SITE_PATH?>/india/<?php echo $courseUrl;?>/<?php echo strtolower($universityUrl) ?>" class="dropdown-item nav-link <?php if($current_page=="university-".strtolower($universityUrl)){echo "active";}?>"><?php echo $singleUniversity['name']?></a>
+                                                </li>
+                                                <?php
+                                            }
+                                            
+                                        }
+                                    ?>
+                                </ul>
+                            </li>
+                            <?php
+                        }
                         ?>
                     </ul>
+                    <?php
+                    }
+                    ?>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        MBBS Abroad
+                        Study Abroad
                     </a>
                     <ul class="dropdown-menu">
-                        <?php while($country = mysqli_fetch_assoc($countriesAbroad)){?>
+                        <?php while($course = mysqli_fetch_assoc($courses)){?>
                         <li>
-                            <a href="<?php echo SITE_PATH;?>/mbbs-in-<?php echo urlencode(strtolower($country['name']))?>" class="nav-link dropdown-item <?php if($current_page=="mbbs-in-".urlencode(strtolower($country['name']))){echo "active";}?>">MBBS in <?php echo $country['name']?></a>
+                            <a href="#" class="nav-link dropdown-item"><?php echo $course['name']?></a>
+                            <?php
+                                $id = $course['id'];
+                                $countriesWithCourse = $countryObj->getCountriesByCourseId($id);
+                                if($countriesWithCourse){
+                            ?>
                             <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left">
                                 <?php
-                                $id = $country['id'];
-                                $universitiesInCountry = $universityObj->getUniversityByCountryId($id);
-                                while($singleUniversity = mysqli_fetch_array($universitiesInCountry)){
-                                    $universityUrl = explode(",", $singleUniversity['name'])[0];
-                                    $universityUrl = str_replace(" ", "-", $universityUrl);
+                                    while($singleCountryWithCourse = mysqli_fetch_array($countriesWithCourse)){
+                                        ?>
+                                        <li>
+                                            <a href="<?php echo SITE_PATH?>/<?php echo urlencode(strtolower($singleCountryWithCourse['name']))?>/<?php echo urlencode(strtolower($course['name']))?>" class="dropdown-item nav-link"><?php echo $course['name']?> in <?php echo $singleCountryWithCourse['name']?></a>
+                                        </li>
+                                        <?php
+                                    }
                                     ?>
-                                    <li>
-                                        <a href="<?php echo SITE_PATH?>/university-<?php echo strtolower($universityUrl) ?>" class="dropdown-item nav-link <?php if($current_page=="university-".strtolower($universityUrl)){echo "active";}?>"><?php echo $singleUniversity['name']?></a>
-                                    </li>
-                                    <?php
-                                }
-                                ?>
                             </ul>
+                            <?php
+                                }
+                            ?>
                         </li>
                         <?php } ?>
                     </ul>
