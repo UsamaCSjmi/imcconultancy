@@ -22,6 +22,19 @@ class Course
         $result = $this->db->select($query);
         return $result;
     }
+    
+    public function getCourseByCourseName($name)
+    {
+        $query = "SELECT * FROM courses WHERE name LIKE '$name%' ";
+        $result = $this->db->select($query);
+        if($result){
+            return mysqli_fetch_array($result);
+        }
+        else{
+            return false;
+        }
+    }
+
     public function getCoursesInIndia(){
         $sql = "SELECT universities.course_id, courses.name FROM universities JOIN courses ON universities.course_id = courses.id WHERE universities.country = 6 GROUP BY course_id";
         $result = $this->db->select($sql);
@@ -35,7 +48,7 @@ class Course
 
     public function getCourseDetailsByCourseAndCountry($country,$course)
     {
-        $query = "SELECT courses.name as course, countries.name as country, countries.id as country_id, courses.id as course_id, countries.content FROM countries,courses,universities WHERE universities.country=countries.id AND universities.course_id = courses.id AND countries.name = '$country' AND courses.name = '$course'";
+        $query = "SELECT courses.*, course_in_country.content FROM courses JOIN course_in_country ON courses.id = course_in_country.course WHERE courses.name LIKE '$course%' AND course_in_country.country = $country";
         $result = $this->db->select($query);
         if($result){
             return mysqli_fetch_assoc($result);

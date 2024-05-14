@@ -38,4 +38,15 @@ class Format
         }
         return $title = ucfirst($title);
     }
+
+    public static function urlencoded($str){
+        $str = explode(",",$str)[0];
+        $str = str_replace(" ","-",$str);
+        return urlencode(strtolower($str));
+    }
+    
+    public static function urldecoded($str){
+        $str = str_replace("-"," ",$str);
+        return urldecode($str);
+    }
 }

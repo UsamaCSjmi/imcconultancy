@@ -87,7 +87,7 @@ include_once("assets/header.php");
                           MBBS in
                           <?php echo $university['cname'] ?>
                         </p>
-                        <a href="<?php echo SITE_PATH ?>/university-<?php echo strtolower($universityUrl) ?>"
+                        <a href="<?php echo SITE_PATH ?>/<?php echo Format::urlencoded($university['cname']) ?>/mbbs/<?php echo Format::urlencoded($universityUrl) ?>"
                           class="btn btn-dark">View</a>
                       </div>
                     </div>
@@ -117,7 +117,7 @@ include_once("assets/header.php");
                               MBBS in
                               <?php echo $university['cname'] ?>
                             </p>
-                            <a href="<?php echo SITE_PATH ?>/university-<?php echo strtolower($universityUrl) ?>"
+                            <a href="<?php echo SITE_PATH ?>/<?php echo Format::urlencoded($university['cname']) ?>/mbbs/<?php echo Format::urlencoded($universityUrl) ?>"
                               class="btn btn-dark">View</a>
                           </div>
                         </div>
@@ -145,7 +145,7 @@ include_once("assets/header.php");
                               MBBS in
                               <?php echo $university['cname'] ?>
                             </p>
-                            <a href="<?php echo SITE_PATH ?>/university-<?php echo strtolower($universityUrl) ?>"
+                            <a href="<?php echo SITE_PATH ?>/<?php echo Format::urlencoded($university['cname']) ?>/mbbs/<?php echo Format::urlencoded($universityUrl) ?>"
                               class="btn btn-dark">View</a>
                           </div>
                         </div>
@@ -175,7 +175,7 @@ include_once("assets/header.php");
                           MBBS in
                           <?php echo $university['cname'] ?>
                         </p>
-                        <a href="<?php echo SITE_PATH ?>/university-<?php echo strtolower($universityUrl) ?>"
+                        <a href="<?php echo SITE_PATH ?>/<?php echo Format::urlencoded($university['cname']) ?>/mbbs/<?php echo Format::urlencoded($universityUrl) ?>"
                           class="btn btn-dark">View</a>
                       </div>
                     </div>
@@ -292,7 +292,7 @@ include_once("assets/header.php");
       while ($country = mysqli_fetch_assoc($countries)) {
         ?>
         <div class="col ">
-          <a href="<?php echo SITE_PATH."/".strtolower($country['name']) ?>/mbbs" class="card ">
+          <a href="<?php echo SITE_PATH."/".Format::urlencoded($country['name']) ?>/mbbs" class="card ">
             <img class="vimg " src="<?php echo SITE_PATH ?>/assets/images/countries_thumbnails/<?php echo str_replace("jpg","png",$country['image']); ?>"
               alt="<?php echo "MBBS in " . $country['name']; ?>">
             <div class="card-body">

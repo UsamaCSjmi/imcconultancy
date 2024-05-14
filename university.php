@@ -1,21 +1,26 @@
 <?php
 include_once("assets/header.php");
 $country = $router[0];
+$country = Format::urldecoded($country);
+$country = $countryObj->getCountryByCountryName($country);
 $course = $router[1];
+$course = Format::urldecoded($course);
+$course = $courseObj->getCourseByCourseName($course);
 $college = $router[2];
+$college = Format::urldecoded($college);
 
-$college = $universityObj->getUniversityByCountryIdAndCourseId($country,$course,$college);
+$college = $universityObj->getUniversity($country['id'],$course['id'],$college);
 ?>
 
 <div class="banner w-100">
     <img class="d-block w-100" src="<?php echo SITE_PATH ?>/assets/images/banners/background-country.jpg" alt="First slide">
     <div class="d-flex w-100 banner-text">
-        <h1><?php echo $college['course'] ?> in <?php echo $college['college'] ?></h1>
+        <h1><?php echo $course['name'] ?> in <?php echo $college['name'] ?></h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?php echo SITE_PATH ?>">Home</a></li>
-                <li class="breadcrumb-item"><a href="<?php echo SITE_PATH."/".$college['country']."/".$college['course'];?>"><?php echo $college['course']?> in <?php echo $college['country'] ?></a></li>
-                <li class="breadcrumb-item active" aria-current="page"><?php echo $college['college'] ?></li>
+                <li class="breadcrumb-item"><a href="<?php echo SITE_PATH."/".Format::urlencoded($country['name'])."/".Format::urlencoded($course['name']);?>"><?php echo $course['name']?> in <?php echo $country['name'] ?></a></li>
+                <li class="breadcrumb-item active" aria-current="page"><?php echo $college['name'] ?></li>
             </ol>
         </nav>
     </div>
@@ -23,7 +28,7 @@ $college = $universityObj->getUniversityByCountryIdAndCourseId($country,$course,
 <div class="container">
     <div class="row mb-4 mt-4 country-details-container">
         <div class="col-lg-8 col-md-9 col-sm-12 country-info-container p-4">
-            <h2 class="country-name"><?php echo $college['college'] ?></h2>
+            <h2 class="country-name"><?php echo $college['name'] ?></h2>
             <div class="country-text w-100">
                 <?php
                 // $university['content'] = str_replace("SITE_PATH", SITE_PATH, $university['content']);
@@ -61,7 +66,7 @@ $college = $universityObj->getUniversityByCountryIdAndCourseId($country,$course,
                 </div>
                 <div class="col-12 box-shadow p-4">
                     <div class="text-center">
-                        <h5 class="mb-3"><?php echo $college['course']?> Abroad</h5>
+                        <h5 class="mb-3"><?php echo $college['name']?> Abroad</h5>
                     </div>
                     <ul class="list-group list-group-flush">
                         <?php
@@ -69,8 +74,8 @@ $college = $universityObj->getUniversityByCountryIdAndCourseId($country,$course,
                         while ($country = mysqli_fetch_assoc($countries)) {
                         ?>
                             <li class="list-group-item">
-                                <a href="<?php echo SITE_PATH . "/".strtolower($country['name'])."/".$college['course'];?>" class="nav-link">
-                                <?php echo $college['course'];?> in <?php echo $country['name'] ?>
+                                <a href="<?php echo SITE_PATH . "/".Format::urlencoded($country['name'])."/".Format::urlencoded($course['name']);?>" class="nav-link">
+                                <?php echo $course['name'];?> in <?php echo $country['name'] ?>
                                 </a>
                             </li>
                         <?php

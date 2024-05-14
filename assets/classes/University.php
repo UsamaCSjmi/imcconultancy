@@ -89,6 +89,23 @@ class University
             return false;
         }
     }
+
+    public function getUniversity($country,$course,$university)
+    {
+        $country = $this->fm->validation($country);
+        $course = $this->fm->validation($course);
+        $university = $this->fm->validation($university);
+        $query = "SELECT * FROM universities WHERE universities.country = $country AND universities.course_id = $course AND universities.name LIKE '$university%' ";
+        $result = $this->db->select($query);
+        // echo $query;
+        // die();
+        if($result){
+            return mysqli_fetch_array($result);
+        }
+        else{
+            return false;
+        }
+    }
 }
 
 ?>

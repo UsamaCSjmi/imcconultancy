@@ -61,7 +61,7 @@ class Country
 
     public function getCountryByCountryName($name)
     {
-        $query = "SELECT * FROM countries WHERE `name` = '$name' AND status=1";
+        $query = "SELECT * FROM countries WHERE `name` LIKE '$name%' AND status=1";
         $result = $this->db->select($query);
         if($result){
             return mysqli_fetch_assoc($result);

@@ -18,7 +18,7 @@
                                 $footerCountries = $countryObj->getAllCountry();
                                 while($country = mysqli_fetch_assoc($footerCountries)){?>
                                     <li>
-                                        <a href="<?php echo SITE_PATH;?>/mbbs-in-<?php echo urlencode(strtolower($country['name']))?>">MBBS in <?php echo $country['name']?></a>
+                                        <a href="<?php echo SITE_PATH;?>/<?php echo urlencode(strtolower($country['name']))?>/mbbs">MBBS in <?php echo $country['name']?></a>
                                     </li>
                             <?php } ?>
                         </ul>

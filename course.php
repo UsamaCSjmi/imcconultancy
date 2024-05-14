@@ -1,34 +1,32 @@
 <?php
 include_once("assets/header.php");
 $country = $router[0];
+$country = Format::urldecoded($country);
 $course = $router[1];
+$course = Format::urldecoded($course);
 $countryDetails = $countryObj->getCountryByCountryName($country);
-$courseDetails = $courseObj->getCourseDetailsByCourseAndCountry($country, $course);
+$courseDetails = $courseObj->getCourseDetailsByCourseAndCountry($countryDetails['id'], $course);
 ?>
 <div class="banner w-100">
     <img class="d-block w-100" src="<?php echo SITE_PATH ?>/assets/images/banners/background-country.jpg" alt="First slide">
     <div class="d-flex w-100 banner-text">
-        <h1><?php echo $courseDetails['course']?> in <?php echo $courseDetails['country'] ?></h1>
+        <h1><?php echo $courseDetails['name']?> in <?php echo $countryDetails['name'] ?></h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?php echo SITE_PATH ?>">Home</a></li>
-                <!-- <li class="breadcrumb-item"><a href="<?php echo SITE_PATH ?>/<?php echo urlencode(strtolower($courseDetails['country']));?>">Study in <?php echo $courseDetails['country']?></a></li> -->
-                <li class="breadcrumb-item active" aria-current="page"><?php echo $courseDetails['course']?> in <?php echo $courseDetails['country'] ?></li>
+                <li class="breadcrumb-item active" aria-current="page"><?php echo $courseDetails['name']?> in <?php echo $countryDetails['name'] ?></li>
             </ol>
         </nav>
     </div>
 </div>
 <div class="container">
-    <!-- <div class="row mb-4 mt-4">
-        <img src="<?php echo SITE_PATH ?>/assets/images/country_courses/<?php echo strtolower($country) ?>.jpg" class="rounded mx-auto d-block" alt="MBBS in <?php echo $country ?>">
-    </div> -->
     <div class="row mb-4 mt-4 country-details-container">
         <div class="col-lg-8 col-md-9 col-sm-12 country-info-container p-4">
-            <h2 class="country-name"><?php echo $courseDetails['course'] ?> in <?php echo $courseDetails['country'] ?></h2>
+            <h2 class="country-name"><?php echo $courseDetails['name'] ?> in <?php echo $countryDetails['name'] ?></h2>
             <div class="country-text w-100">
                 <?php
-                $countryDetails['content'] = str_replace("SITE_PATH", SITE_PATH, $countryDetails['content']);
-                echo $countryDetails['content'];
+                $courseDetails['content'] = str_replace("SITE_PATH", SITE_PATH, $courseDetails['content']);
+                echo $courseDetails['content'];
                 ?>
             </div>
         </div>
@@ -62,17 +60,17 @@ $courseDetails = $courseObj->getCourseDetailsByCourseAndCountry($country, $cours
                 </div>
                 <div class="col-12 box-shadow p-4">
                     <div class="text-center">
-                        <h5 class="mb-3">Universities of <?php echo $countryDetails['name']; ?></h5>
+                        <h5 class="mb-3">Universities of <?php echo $courseDetails['name']." in ".$countryDetails['name']; ?></h5>
                     </div>
                     <ul class="list-group list-group-flush">
                         <?php
-                        $universities = $universityObj->getUniversityByCountryId($countryDetails['id']);
+                        $universities = $universityObj->getUniversityByCountryIdAndCourseId($countryDetails['id'],$courseDetails['id']);
                         while ($university = mysqli_fetch_assoc($universities)) {
                             $universityUrl = explode(",", $university['name'])[0];
                             $universityUrl = str_replace(" ", "-", $universityUrl);
                         ?>
                             <li class="list-group-item">
-                                <a href="<?php echo SITE_PATH . "/" . urlencode(strtolower($country))."/".urlencode(strtolower($course))."/".urlencode(strtolower($universityUrl)) ?>" class="nav-link">
+                                <a href="<?php echo SITE_PATH . "/" . Format::urlencoded($country)."/".urlencode(strtolower($course))."/".Format::urlencoded($universityUrl) ?>" class="nav-link">
                                     <?php echo $university['name'] ?>
                                 </a>
                             </li>
