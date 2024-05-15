@@ -48,7 +48,7 @@ class Course
 
     public function getCourseDetailsByCourseAndCountry($country,$course)
     {
-        $query = "SELECT courses.*, course_in_country.content FROM courses JOIN course_in_country ON courses.id = course_in_country.course WHERE courses.name LIKE '$course%' AND course_in_country.country = $country";
+        $query = "SELECT courses.*, course_in_country.content,course_in_country.title, course_in_country.description FROM courses JOIN course_in_country ON courses.id = course_in_country.course WHERE courses.name LIKE '$course%' AND course_in_country.country = $country";
         $result = $this->db->select($query);
         if($result){
             return mysqli_fetch_assoc($result);

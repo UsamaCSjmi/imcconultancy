@@ -5,22 +5,8 @@
     <meta charset="utf-8" />
     <meta name="robots" content="noindex , nofollow"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      <?php
-        if(isset($title[$current_page])) 
-          echo $title[$current_page];
-        else
-          echo "Page Not Found! ERROR 404.";
-      ?>
-    </title>
-    <meta name="description" content="
-    <?php
-    
-      if(isset($description[$current_page])) 
-        echo $description[$current_page];
-      else
-        echo "Page Not Found! ERROR 404.";
-    ?>"/>
+    <title><?php echo $metaTitle;?></title>
+    <meta name="description" content="<?php echo $metaDescription;?>"/>
     <link rel="manifest" href="<?php echo SITE_PATH;?>/assets/favicon/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#faaf02">
     <meta name="theme-color" content="#2f2484">

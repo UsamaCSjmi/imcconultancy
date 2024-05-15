@@ -31,8 +31,8 @@ $college = $universityObj->getUniversity($country['id'],$course['id'],$college);
             <h2 class="country-name"><?php echo $college['name'] ?></h2>
             <div class="country-text w-100">
                 <?php
-                // $university['content'] = str_replace("SITE_PATH", SITE_PATH, $university['content']);
-                // echo $university['content'];
+                $college['content'] = str_replace("SITE_PATH", SITE_PATH, $college['content']);
+                echo $college['content'];
                 ?>
             </div>
         </div>

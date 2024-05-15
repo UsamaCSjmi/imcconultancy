@@ -1,7 +1,5 @@
 <?php
 include_once("assets/header.php");
-$country = $router[0];
-$countryDetails = $countryObj->getCountryByCountryName($country);
 ?>
 <div class="banner w-100">
     <img class="d-block w-100" src="<?php echo SITE_PATH ?>/assets/images/banners/background-country.jpg" alt="First slide">

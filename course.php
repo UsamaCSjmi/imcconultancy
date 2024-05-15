@@ -1,11 +1,5 @@
 <?php
 include_once("assets/header.php");
-$country = $router[0];
-$country = Format::urldecoded($country);
-$course = $router[1];
-$course = Format::urldecoded($course);
-$countryDetails = $countryObj->getCountryByCountryName($country);
-$courseDetails = $courseObj->getCourseDetailsByCourseAndCountry($countryDetails['id'], $course);
 ?>
 <div class="banner w-100">
     <img class="d-block w-100" src="<?php echo SITE_PATH ?>/assets/images/banners/background-country.jpg" alt="First slide">
@@ -70,7 +64,7 @@ $courseDetails = $courseObj->getCourseDetailsByCourseAndCountry($countryDetails[
                             $universityUrl = str_replace(" ", "-", $universityUrl);
                         ?>
                             <li class="list-group-item">
-                                <a href="<?php echo SITE_PATH . "/" . Format::urlencoded($country)."/".urlencode(strtolower($course))."/".Format::urlencoded($universityUrl) ?>" class="nav-link">
+                                <a href="<?php echo SITE_PATH . "/" . Format::urlencoded($countryDetails['name'])."/".Format::urlencoded($courseDetails['name'])."/".Format::urlencoded($universityUrl) ?>" class="nav-link">
                                     <?php echo $university['name'] ?>
                                 </a>
                             </li>
